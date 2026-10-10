@@ -1,0 +1,19 @@
+# Temporary files
+tmp/
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime
+results/
+logs/
