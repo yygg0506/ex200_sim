@@ -17,3 +17,8 @@ __pycache__/
 # Runtime
 results/
 logs/
+
+# Vim
+*.swp
+*.swo
+*~
