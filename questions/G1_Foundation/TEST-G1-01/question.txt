@@ -1,0 +1,11 @@
+TEST-G1-01｜Directory Permissions
+
+系統已經存在目錄 /srv/examdata。
+
+請將該目錄調整至以下狀態：
+
+Owner: root
+Group: root
+Permission: 750
+
+Points: 10
