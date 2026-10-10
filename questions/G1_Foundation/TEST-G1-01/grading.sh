@@ -10,6 +10,6 @@ permission=$(stat -c '%a' "$target")
 
 [[ "$owner" == "0" ]] || exit 1
 [[ "$group" == "0" ]] || exit 1
-[[ "$permission" == "755" ]] || exit 1
+[[ "$permission" == "750" ]] || exit 1
 
 exit 0
