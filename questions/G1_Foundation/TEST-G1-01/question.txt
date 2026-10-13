@@ -1,11 +1,12 @@
-TEST-G1-01｜Directory Permissions
+G1-001 | Configure DNF Repositories
 
-系統已經存在目錄 /srv/examdata。
+Configure your system to use the following software repositories:
 
-請將該目錄調整至以下狀態：
+BaseOS:
+  http://192.168.100.10/BaseOS
 
-Owner: root
-Group: root
-Permission: 750
+AppStream:
+  http://192.168.100.10/AppStream
 
-Points: 10
+Ensure that both repositories are enabled and can be used
+to retrieve software packages.
