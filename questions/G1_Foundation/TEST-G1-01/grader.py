@@ -32,7 +32,7 @@ for repo_id in result.stdout.splitlines()[1:]:
 
     for line in info.stdout.splitlines():
         if line.strip().startswith("Base URL"):
-            url = line.split(".", 1)[1].strip()
+            url = line.split(":", 1)[1].strip()
 
             repos.append({
                 "id": repo_id,
@@ -49,8 +49,8 @@ for expected_url in expected_urls:
 
         if repo["url"].rstrip("/") == expected_url.rstrip("/"):
             print(f"[PASS] {expected_url} ({repo['id']})")
-            matched = Ture
+            matched = True
             break
-    if not matched:
-        print(f"[FAIL] {expected_url}")
+        if not matched:
+            print(f"[FAIL] {expected_url}")
 
