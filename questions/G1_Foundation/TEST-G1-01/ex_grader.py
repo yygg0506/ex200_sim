@@ -29,9 +29,9 @@ for dnf_repoid in dnf_repolist.stdout.splitlines()[1:]:
     if dnf_repoinfo.returncode != 0:
         continue
 
-    for dnf_repoinfo_line in dnf_repoinfo,splitlines():
-        if dnf_repoinfo_line.startswith("Base URL"):
-            dnf_url = dnf_repoinfo_line.split(":", 1)[1]
+    for dnf_repoinfo_line in dnf_repoinfo.stdout.splitlines()[1:]:
+        if dnf_repoinfo_line.strip().startswith("Base URL"):
+            dnf_url = dnf_repoinfo_line.strip().split(":", 1)[1]
 
             dnf_target_info.append({
                 "id": dnf_repoid,
