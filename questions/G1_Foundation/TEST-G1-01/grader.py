@@ -51,6 +51,6 @@ for expected_url in expected_urls:
             print(f"[PASS] {expected_url} ({repo['id']})")
             matched = True
             break
-        if not matched:
-            print(f"[FAIL] {expected_url}")
+    if not matched:
+        print(f"[FAIL] {expected_url}")
 
