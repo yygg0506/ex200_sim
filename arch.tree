@@ -1,0 +1,22 @@
+/root/clilab/ex200_sim/
+├── arch.tree
+├── CLI_interface
+│   └── interface.sh
+├── env_generator
+│   ├── G1_Foundation
+│   │   ├── boot
+│   │   ├── dnf
+│   │   └── network
+│   ├── G2_Sys_Resources
+│   ├── G3_Sys_Operations
+│   └── G4_Security_and_Integration
+├── not_sure
+│   └── TEST-G1-01
+│       ├── env.sh
+│       ├── ex_grader.py
+│       ├── grader.py
+│       └── question.txt
+├── record
+└── test_generator
+
+14 directories, 6 files
