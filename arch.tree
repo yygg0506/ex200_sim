@@ -4,13 +4,21 @@
 ├── env_generator
 │   ├── env_generator_main.py
 │   ├── file
+│   │   ├── t1_meta
+│   │   ├── t2_node1
+│   │   ├── t2_node2
+│   │   └── t2_server
 │   ├── G1_Foundation
 │   │   ├── boot
-│   │   ├── dnf
-│   │   │   └── dnf_repourl
-│   │   │       └── dnf_repourl.py
 │   │   ├── G1_generator.py
-│   │   └── network
+│   │   ├── network
+│   │   │   └── network_ip
+│   │   │       └── network_ip.py
+│   │   └── software
+│   │       └── dnf_repourl
+│   │           ├── dnf_repourl.py
+│   │           └── __pycache__
+│   │               └── dnf_repourl.cpython-314.pyc
 │   ├── G2_Sys_Resources
 │   ├── G3_Sys_Operations
 │   └── G4_Security_and_Integration
@@ -24,4 +32,4 @@
 │       └── question.txt
 └── record
 
-16 directories, 9 files
+18 directories, 15 files
