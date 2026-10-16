@@ -1,5 +1,4 @@
-/root/clilab/ex200_sim/
-├── arch.tree
+.
 ├── CLI_interface
 │   └── interface.sh
 ├── env_generator
@@ -10,6 +9,7 @@
 │   ├── G2_Sys_Resources
 │   ├── G3_Sys_Operations
 │   └── G4_Security_and_Integration
+├── .gitignore
 ├── not_sure
 │   └── TEST-G1-01
 │       ├── env.sh
