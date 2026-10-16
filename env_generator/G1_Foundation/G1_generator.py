@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from dnf.dnf_repourl.dnf_repourl import generate_dnf
+from dnf.dnf_repourl.dnf_repourl import G1_gen_dnf
 
 def g1_gen():
     ip = "192.168.100.10"
