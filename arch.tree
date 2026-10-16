@@ -2,13 +2,19 @@
 ├── CLI_interface
 │   └── interface.sh
 ├── env_generator
+│   ├── env_generator_main.py
+│   ├── file
 │   ├── G1_Foundation
 │   │   ├── boot
 │   │   ├── dnf
+│   │   │   └── dnf_repourl
+│   │   │       └── dnf_repourl.py
+│   │   ├── G1_generator.py
 │   │   └── network
 │   ├── G2_Sys_Resources
 │   ├── G3_Sys_Operations
 │   └── G4_Security_and_Integration
+├── exam_generator
 ├── .gitignore
 ├── not_sure
 │   └── TEST-G1-01
@@ -16,7 +22,6 @@
 │       ├── ex_grader.py
 │       ├── grader.py
 │       └── question.txt
-├── record
-└── test_generator
+└── record
 
-14 directories, 6 files
+16 directories, 9 files
