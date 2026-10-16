@@ -2,10 +2,10 @@
 
 from dnf.dnf_repourl.dnf_repourl import generate_dnf
 
-def generator_g1():
+def g1_gen():
     ip = "192.168.100.10"
 
-    dnf = generator_dnf(ip)
+    dnf = g1_gen_dnf(ip)
 
     return {
             "ip": ip,
@@ -13,5 +13,5 @@ def generator_g1():
             }
 
 if __name__ == "__main__":
-    result = generate_g1()
+    result = g1_gen()
     print(result)
