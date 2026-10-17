@@ -7,7 +7,9 @@
 │   │   ├── t1_meta
 │   │   ├── t2_node1
 │   │   ├── t2_node2
-│   │   └── t2_server
+│   │   ├── t2_server
+│   │   ├── t2_t1
+│   │   └── t2_t2
 │   ├── G1_Foundation
 │   │   ├── boot
 │   │   ├── G1_generator.py
@@ -35,4 +37,4 @@
 │       └── question.txt
 └── record
 
-19 directories, 17 files
+19 directories, 19 files
