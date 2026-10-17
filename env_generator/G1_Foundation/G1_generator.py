@@ -18,16 +18,20 @@ def g1_gen():
 
     ## network_ip ##
     network_ip = g1_gen_network_ip()
+
     t1_info["network"] = network_ip["t1"]
-    t2_info["node1"] = network_ip["t2"]["node1"]
-    t2_info["node2"] = network_ip["t2"]["node2"]
-    t2_info["server"] = network_ip["t2"]["server"]
+    for machine, ip in network_ip["t2"].items():
+        t2_info[machine] = {
+                "network": {
+                    "ip": ip
+                    }
+                }
 
     ## dnf_url ##
     dnf_repo_url = g1_gen_dnf(network_ip["t2"]["server"])
     t1_info["dnf_repo_url"] = dnf_repo_url
 
-    ## info ##
+    ## info_proc ##
     result = {
             "t1_info": t1_info,
             "t2_info": t2_info,
