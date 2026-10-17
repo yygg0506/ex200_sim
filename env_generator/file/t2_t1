@@ -1,6 +1,0 @@
-{
-    "network_ip": {
-        "ip_prefix": "192.168.10",
-        "prefix_length": 24
-    }
-}

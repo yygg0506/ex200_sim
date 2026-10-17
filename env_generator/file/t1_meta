@@ -1,10 +1,10 @@
 {
-    "sector": {
-        "ip_prefix": "192.168.10",
+    "network_ip": {
+        "ip_prefix": "10.10.10",
         "prefix_length": 24
     },
-    "dnf_repo_url": {
-        "baseos_url": "http://192.168.10.54/BaseOS",
-        "appstream": "http://192.168.10.54/AppStream"
+    "dnf_repourl": {
+        "baseos_url": "http://10.10.10.63/BaseOS",
+        "appstream": "http://10.10.10.63/AppStream"
     }
 }

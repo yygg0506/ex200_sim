@@ -5,6 +5,8 @@ def g1_gen_dnf(ip):
     appstream = f"http://{ip}/AppStream"
 
     return {
-            "baseos_url": baseos,
-            "appstream": appstream
+            "t1": {
+                "baseos_url": baseos,
+                "appstream": appstream
+                }
             }
