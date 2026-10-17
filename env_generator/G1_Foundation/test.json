@@ -1,19 +1,23 @@
 {
     "t1_info": {
         "network": {
-            "ip_prefix": "172.16.10",
+            "ip_prefix": "10.10.10",
             "prefix_length": 24
+        },
+        "dnf_repo_url": {
+            "baseos_url": "http://10.10.10.181/BaseOS",
+            "appstream": "http://10.10.10.181/AppStream"
         }
     },
     "t2_info": {
         "network": {
-            "node1": "172.16.10.71",
-            "node2": "172.16.10.72",
-            "server": "172.16.10.73"
+            "node1": "10.10.10.179",
+            "node2": "10.10.10.180",
+            "server": "10.10.10.181"
         }
     },
-    "dnf": {
-        "baseos_url": "http://172.16.10.73/BaseOS",
-        "appstream": "http://172.16.10.73/AppStream"
+    "dnf_repo_url": {
+        "baseos_url": "http://10.10.10.181/BaseOS",
+        "appstream": "http://10.10.10.181/AppStream"
     }
 }
