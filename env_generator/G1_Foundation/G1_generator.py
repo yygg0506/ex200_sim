@@ -1,23 +1,16 @@
 #!/usr/bin/env python3
 
+from pathlib import Path
+import sys
 import json
+
+ENV_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ENV_DIR))
+
+from lib.info_proc import t1_info_proc, t2_info_proc
+from lib.file_write import t1_write, t2_write
 from software.dnf_repourl.dnf_repourl import g1_gen_dnf
 from network.network_ip.network_ip import g1_gen_network_ip
-
-def t1_write(info):
-    with open("/root/clilab/ex200_sim/env_generator/file/t1_meta", "w") as file:
-        json.dump(info, file, indent=4)
-
-def t2_write(mechine, info):
-    with open(f"/root/clilab/ex200_sim/env_generator/file/t2_{mechine}", "w") as file:
-        json.dump(info, file, indent=4)
-
-def t1_info_proc(t1_info, sector, output_file):
-    t1_info[sector] = output_file["t1"]
-
-def t2_info_proc(t2_info, sector, output_file):
-    for mechine, info in output_file["t2"].items():
-        t2_info.setdefault(mechine, {})[sector] = info
 
 def g1_gen():
     t1_info = {}

@@ -4,7 +4,7 @@
 ├── env_generator
 │   ├── env_generator_main.py
 │   ├── file
-│   │   ├── t1_meta
+│   │   ├── t1_info
 │   │   ├── t2_info
 │   │   ├── t2_node1
 │   │   ├── t2_node2
@@ -17,17 +17,20 @@
 │   │   │       ├── network_ip.py
 │   │   │       └── __pycache__
 │   │   │           └── network_ip.cpython-314.pyc
-│   │   ├── software
-│   │   │   └── dnf_repourl
-│   │   │       ├── dnf_repourl.py
-│   │   │       └── __pycache__
-│   │   │           └── dnf_repourl.cpython-314.pyc
-│   │   └── test.json
+│   │   └── software
+│   │       └── dnf_repourl
+│   │           ├── dnf_repourl.py
+│   │           └── __pycache__
+│   │               └── dnf_repourl.cpython-314.pyc
 │   ├── G2_Sys_Resources
 │   ├── G3_Sys_Operations
 │   ├── G4_Security_and_Integration
 │   └── lib
-│       └── file_write.py
+│       ├── file_write.py
+│       ├── info_proc.py
+│       └── __pycache__
+│           ├── file_write.cpython-314.pyc
+│           └── info_proc.cpython-314.pyc
 ├── exam_generator
 ├── .gitignore
 ├── not_sure
@@ -38,4 +41,4 @@
 │       └── question.txt
 └── record
 
-20 directories, 19 files
+21 directories, 21 files
