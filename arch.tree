@@ -13,7 +13,9 @@
 │   │   ├── G1_generator.py
 │   │   ├── network
 │   │   │   └── network_ip
-│   │   │       └── network_ip.py
+│   │   │       ├── network_ip.py
+│   │   │       └── __pycache__
+│   │   │           └── network_ip.cpython-314.pyc
 │   │   └── software
 │   │       └── dnf_repourl
 │   │           ├── dnf_repourl.py
@@ -32,4 +34,4 @@
 │       └── question.txt
 └── record
 
-18 directories, 15 files
+19 directories, 16 files

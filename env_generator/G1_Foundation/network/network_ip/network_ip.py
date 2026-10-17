@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import randon
+import random
 
 def g1_gen_network_ip():
     ip_templates = [
@@ -9,9 +9,9 @@ def g1_gen_network_ip():
             "10.10.10",
             ]
 
-    prefix = randon.choice(ip_templates)
+    prefix = random.choice(ip_templates)
 
-    start = randon.randonint(10, 200)
+    start = random.randint(10, 200)
 
     return {
             "node1": f"{prefix}.{start}",
