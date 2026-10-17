@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 from software.dnf_repourl.dnf_repourl import g1_gen_dnf
+from network.network_ip.network_ip import g1_gen_network_ip
 
 def g1_gen():
-    ip = gi_gen_network_ip()
+    ip = g1_gen_network_ip()
 
     dnf = g1_gen_dnf(ip)
 
