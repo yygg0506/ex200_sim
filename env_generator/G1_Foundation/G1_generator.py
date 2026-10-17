@@ -3,7 +3,7 @@
 from software.dnf_repourl.dnf_repourl import g1_gen_dnf
 
 def g1_gen():
-    ip = "192.168.100.10"
+    ip = gi_gen_network_ip()
 
     dnf = g1_gen_dnf(ip)
 
