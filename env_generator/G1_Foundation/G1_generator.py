@@ -35,9 +35,8 @@ def g1_gen():
             }
 
     t1_write(t1_info)
-    for t2_mechine_info in t2_info:
-        for mechine in [node1, node2, server]:
-        t2_write(mechine, t2_mechine_info)
+    for mechine, info in t2_info.items():
+        t2_write(mechine, info)
 
     return result
 

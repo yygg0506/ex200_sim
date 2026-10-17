@@ -1,0 +1,10 @@
+{
+    "network": {
+        "ip_prefix": "10.10.10",
+        "prefix_length": 24
+    },
+    "dnf_repo_url": {
+        "baseos_url": "http://10.10.10.106/BaseOS",
+        "appstream": "http://10.10.10.106/AppStream"
+    }
+}
