@@ -1,0 +1,19 @@
+{
+    "t1_info": {
+        "network": {
+            "ip_prefix": "172.16.10",
+            "prefix_length": 24
+        }
+    },
+    "t2_info": {
+        "network": {
+            "node1": "172.16.10.71",
+            "node2": "172.16.10.72",
+            "server": "172.16.10.73"
+        }
+    },
+    "dnf": {
+        "baseos_url": "http://172.16.10.73/BaseOS",
+        "appstream": "http://172.16.10.73/AppStream"
+    }
+}
