@@ -1,3 +1,4 @@
 {
-    "network_ip": "172.16.10.125"
+    "network_ip": "172.16.10.35",
+    "network_hostname": "node2.example.test"
 }

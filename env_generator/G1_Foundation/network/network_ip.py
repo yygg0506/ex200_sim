@@ -17,6 +17,7 @@ def g1_gen_network_ip():
             "t1": {
                 "ip_prefix": f"{prefix}",
                 "prefix_length": 24,
+                "gateway": f"{prefix}.1",
                 },
             "t2": {
                 "node1": f"{prefix}.{start}",

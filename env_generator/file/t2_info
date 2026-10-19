@@ -1,11 +1,14 @@
 {
     "node1": {
-        "network_ip": "172.16.10.124"
+        "network_ip": "172.16.10.34",
+        "network_hostname": "node1.example.test"
     },
     "node2": {
-        "network_ip": "172.16.10.125"
+        "network_ip": "172.16.10.35",
+        "network_hostname": "node2.example.test"
     },
     "server": {
-        "network_ip": "172.16.10.126"
+        "network_ip": "172.16.10.36",
+        "network_hostname": "server.example.test"
     }
 }

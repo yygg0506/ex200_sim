@@ -10,7 +10,8 @@ sys.path.insert(0, str(ENV_DIR))
 from lib.info_proc import t1_info_proc, t2_info_proc
 from lib.file_write import t1_write, t2_write
 from software.dnf_repourl.dnf_repourl import g1_gen_dnf
-from network.network_ip.network_ip import g1_gen_network_ip
+from network.network_ip import g1_gen_network_ip
+from network.network_hostname import g1_gen_network_hostname
 
 def g1_gen():
     t1_info = {}
@@ -20,6 +21,9 @@ def g1_gen():
     network_ip = g1_gen_network_ip()
     t1_info_proc(t1_info, "network_ip", network_ip)
     t2_info_proc(t2_info, "network_ip", network_ip)
+
+    network_hostname = g1_gen_network_hostname()
+    t2_info_proc(t2_info, "network_hostname", network_hostname)
 
     ## dnf_url ##
     dnf_repo_url = g1_gen_dnf(t2_info["server"]["network_ip"])

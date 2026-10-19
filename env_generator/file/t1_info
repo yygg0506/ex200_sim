@@ -1,10 +1,11 @@
 {
     "network_ip": {
         "ip_prefix": "172.16.10",
-        "prefix_length": 24
+        "prefix_length": 24,
+        "gateway": "172.16.10.1"
     },
     "dnf_repourl": {
-        "baseos_url": "http://172.16.10.126/BaseOS",
-        "appstream_url": "http://172.16.10.126/AppStream"
+        "baseos_url": "http://172.16.10.36/BaseOS",
+        "appstream_url": "http://172.16.10.36/AppStream"
     }
 }

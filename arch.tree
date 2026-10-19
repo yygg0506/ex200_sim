@@ -13,10 +13,11 @@
 │   │   ├── boot
 │   │   ├── G1_generator.py
 │   │   ├── network
-│   │   │   └── network_ip
-│   │   │       ├── network_ip.py
-│   │   │       └── __pycache__
-│   │   │           └── network_ip.cpython-314.pyc
+│   │   │   ├── network_hostname.py
+│   │   │   ├── network_ip.py
+│   │   │   └── __pycache__
+│   │   │       ├── network_hostname.cpython-314.pyc
+│   │   │       └── network_ip.cpython-314.pyc
 │   │   └── software
 │   │       └── dnf_repourl
 │   │           ├── dnf_repourl.py
@@ -41,4 +42,4 @@
 │       └── question.txt
 └── record
 
-21 directories, 21 files
+20 directories, 23 files
