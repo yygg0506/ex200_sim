@@ -7,11 +7,9 @@ import json
 ENV_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
-from lib.info_proc import t1_info_proc, t2_info_proc
-from lib.file_write import t1_write, t2_write
+from lib import t1_info_proc, t2_info_proc, t1_write, t2_write
 from software.dnf_repourl.dnf_repourl import g1_gen_dnf
-from network.network_ip import g1_gen_network_ip
-from network.network_hostname import g1_gen_network_hostname
+from network import g1_gen_network_ip, import g1_gen_network_hostname
 
 def g1_gen():
     t1_info = {}

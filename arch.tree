@@ -13,6 +13,7 @@
 │   │   ├── boot
 │   │   ├── G1_generator.py
 │   │   ├── network
+│   │   │   ├── __init__.py
 │   │   │   ├── network_hostname.py
 │   │   │   ├── network_ip.py
 │   │   │   └── __pycache__
@@ -29,6 +30,7 @@
 │   └── lib
 │       ├── file_write.py
 │       ├── info_proc.py
+│       ├── __init__.py
 │       └── __pycache__
 │           ├── file_write.cpython-314.pyc
 │           └── info_proc.cpython-314.pyc
@@ -42,4 +44,4 @@
 │       └── question.txt
 └── record
 
-20 directories, 23 files
+20 directories, 25 files
