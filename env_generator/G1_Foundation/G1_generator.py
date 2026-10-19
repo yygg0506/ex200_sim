@@ -9,7 +9,7 @@ sys.path.insert(0, str(ENV_DIR))
 
 from lib import t1_info_proc, t2_info_proc, t1_write, t2_write
 from software.dnf_repourl.dnf_repourl import g1_gen_dnf
-from network import g1_gen_network_ip, import g1_gen_network_hostname
+from network import g1_gen_network_ip, g1_gen_network_hostname
 
 def g1_gen():
     t1_info = {}
