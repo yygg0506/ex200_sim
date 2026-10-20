@@ -1,47 +1,33 @@
 .
-├── CLI_interface
-│   └── interface.sh
-├── env_generator
-│   ├── env_generator_main.py
-│   ├── file
-│   │   ├── t1_info
-│   │   ├── t2_info
-│   │   ├── t2_node1
-│   │   ├── t2_node2
-│   │   └── t2_server
-│   ├── G1_Foundation
-│   │   ├── boot
-│   │   ├── G1_generator.py
-│   │   ├── network
-│   │   │   ├── __init__.py
-│   │   │   ├── network_hostname.py
-│   │   │   ├── network_ip.py
-│   │   │   └── __pycache__
-│   │   │       ├── network_hostname.cpython-314.pyc
-│   │   │       └── network_ip.cpython-314.pyc
-│   │   └── software
-│   │       └── dnf_repourl
-│   │           ├── dnf_repourl.py
-│   │           └── __pycache__
-│   │               └── dnf_repourl.cpython-314.pyc
-│   ├── G2_Sys_Resources
-│   ├── G3_Sys_Operations
-│   ├── G4_Security_and_Integration
-│   └── lib
-│       ├── file_write.py
-│       ├── info_proc.py
-│       ├── __init__.py
-│       └── __pycache__
-│           ├── file_write.cpython-314.pyc
-│           └── info_proc.cpython-314.pyc
-├── exam_generator
-├── .gitignore
-├── not_sure
-│   └── TEST-G1-01
-│       ├── env.sh
-│       ├── ex_grader.py
-│       ├── grader.py
-│       └── question.txt
-└── record
+|-- .gitignore
+|-- CLI_interface
+|   `-- interface.sh
+|-- env_generator
+|   |-- G1_Foundation
+|   |   |-- G1_generator.py
+|   |   |-- network
+|   |   |   |-- __init__.py
+|   |   |   |-- network_hostname.py
+|   |   |   `-- network_ip.py
+|   |   `-- software
+|   |       `-- dnf_repourl
+|   |           `-- dnf_repourl.py
+|   |-- env_generator_main.py
+|   |-- file
+|   |   |-- t1_info
+|   |   |-- t2_info
+|   |   |-- t2_node1
+|   |   |-- t2_node2
+|   |   `-- t2_server
+|   `-- lib
+|       |-- __init__.py
+|       |-- file_write.py
+|       `-- info_proc.py
+`-- not_sure
+    `-- TEST-G1-01
+        |-- env.sh
+        |-- ex_grader.py
+        |-- grader.py
+        `-- question.txt
 
-20 directories, 25 files
+11 directories, 20 files
