@@ -39,9 +39,9 @@ def g2_gen_identity_group(random_num):
         gid_list.append(gid)
 
     # group_name: [name_prefix]+[number]
-        name_prefix = random.choice(prefix)
-        grp_name_num = random.randint(0, 100)
         while True:
+            name_prefix = random.choice(prefix)
+            grp_name_num = random.randint(0, 100)
             group_name = f"{name_prefix}-{grp_name_num}" 
             if group_name in grp_name_list:
                 continue
@@ -50,6 +50,8 @@ def g2_gen_identity_group(random_num):
                 continue
             except KeyError:
                 break
+            
+        grp_name_list.append(group_name)
 
         return {
                 "gid": gid,
@@ -62,4 +64,4 @@ def g2_gen_identity_group(random_num):
     return group_profile
 # test #
 result = g2_gen_identity_group(5)
-t2_write()
+file_write(result)

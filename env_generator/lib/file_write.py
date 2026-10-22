@@ -14,5 +14,5 @@ def t2_write(mechine, info):
         json.dump(info, file, indent=4)
 
 def file_write(file_name, info):
-    with open(OUTPUT_DIR / "file_name", "w") as file:
+    with open(OUTPUT_DIR / file_name, "w") as file:
         json.dump(info, file, indent=4)
