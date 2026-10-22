@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 
 def g2_gen():
+
+    def random_number():
+
     t1_info = {}
     t2_info = {}
+    random_num = random_number()
+
 
     ## identity ##
         # user / uid
         id_group = {}
         id_user = {}
 
-            g2_gen_identity_group(random_num)
-            g2_gen_identity_user(random_num)       
-            g2_gen_identity_proc(id_group, id_user)       
+        id_group = g2_gen_identity_group(random_num)
+        id_user = g2_gen_identity_user(random_num)       
+        g2_gen_identity_proc(id_group, id_user)       
 
         # group / gid / membership
         # password / passwd aging
