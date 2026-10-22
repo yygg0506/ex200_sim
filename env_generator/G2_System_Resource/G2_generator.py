@@ -6,7 +6,7 @@ def g2_gen():
 
     ## idendity ##
         # user / uid
-            g2_gen_idendity_user(ramdon_num)       
+            g2_gen_identity_user(ramdon_num)       
 
         # group / gid / membership
         # password / passwd aging
