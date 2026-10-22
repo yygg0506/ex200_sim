@@ -1,4 +1,4 @@
 {
-    "network_ip": "172.16.10.36",
+    "network_ip": "10.10.10.128",
     "network_hostname": "server.example.test"
 }

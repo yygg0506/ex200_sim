@@ -7,11 +7,19 @@
 |   |   |-- G1_generator.py
 |   |   |-- network
 |   |   |   |-- __init__.py
+|   |   |   |-- __pycache__
+|   |   |   |   |-- __init__.cpython-311.pyc
+|   |   |   |   |-- network_hostname.cpython-311.pyc
+|   |   |   |   `-- network_ip.cpython-311.pyc
 |   |   |   |-- network_hostname.py
 |   |   |   `-- network_ip.py
 |   |   `-- software
 |   |       `-- dnf_repourl
+|   |           |-- __pycache__
+|   |           |   `-- dnf_repourl.cpython-311.pyc
 |   |           `-- dnf_repourl.py
+|   |-- G2
+|   |   `-- G2_generator.py
 |   |-- env_generator_main.py
 |   |-- file
 |   |   |-- t1_info
@@ -21,6 +29,10 @@
 |   |   `-- t2_server
 |   `-- lib
 |       |-- __init__.py
+|       |-- __pycache__
+|       |   |-- __init__.cpython-311.pyc
+|       |   |-- file_write.cpython-311.pyc
+|       |   `-- info_proc.cpython-311.pyc
 |       |-- file_write.py
 |       `-- info_proc.py
 `-- not_sure
@@ -30,4 +42,4 @@
         |-- grader.py
         `-- question.txt
 
-11 directories, 20 files
+15 directories, 28 files
