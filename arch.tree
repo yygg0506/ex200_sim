@@ -18,8 +18,16 @@
 |   |           |-- __pycache__
 |   |           |   `-- dnf_repourl.cpython-311.pyc
 |   |           `-- dnf_repourl.py
-|   |-- G2
-|   |   `-- G2_generator.py
+|   |-- G2_System_Resource
+|   |   |-- G2_generator.py
+|   |   |-- file_system
+|   |   |-- idendity
+|   |   |   |-- idendity_group.py
+|   |   |   |-- idendity_passwd.py
+|   |   |   `-- idendity_user.py
+|   |   `-- storage
+|   |-- G3_System_Operations
+|   |-- G4_Security_Integration
 |   |-- env_generator_main.py
 |   |-- file
 |   |   |-- t1_info
@@ -42,4 +50,4 @@
         |-- grader.py
         `-- question.txt
 
-15 directories, 28 files
+20 directories, 31 files
