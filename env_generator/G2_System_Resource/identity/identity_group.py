@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 
+import sys
 import grp
 import random
+
+from pathlib import Path
+ENV_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ENV_DIR))
+
+from lib import file_write
 
 def g2_gen_identity_group(random_num):
     ## (random_num) -> loop -> group_detail() -> return [dict]group_profile
@@ -33,8 +40,16 @@ def g2_gen_identity_group(random_num):
 
     # group_name: [name_prefix]+[number]
         name_prefix = random.choice(prefix)
-        grp_num = random.randint(0, 100)
-        group_name = f"{name_prefix}-{grp_num}" 
+        grp_name_num = random.randint(0, 100)
+        while True:
+            group_name = f"{name_prefix}-{grp_name_num}" 
+            if group_name in grp_name_list:
+                continue
+            try:
+                grp.getgrnam(group_name)
+                continue
+            except KeyError:
+                break
 
         return {
                 "gid": gid,
@@ -47,4 +62,4 @@ def g2_gen_identity_group(random_num):
     return group_profile
 # test #
 result = g2_gen_identity_group(5)
-print(result)
+t2_write()
