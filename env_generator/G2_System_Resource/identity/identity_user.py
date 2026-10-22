@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-def g2_gen_identity_user(input_num):
-    # (input_num) -> user_profile(num) -> user_detial()
+def g2_gen_identity_user(random_num):
+    ## (random_num) -> loop -> user_detial() -> return[dict] ##
+
     # user_detial: ( looping ) -> user_profile["t1"][dict]
         # uid: [>1000, ramdon]
         # group: [main] "[support]"

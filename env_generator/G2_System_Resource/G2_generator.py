@@ -4,9 +4,14 @@ def g2_gen():
     t1_info = {}
     t2_info = {}
 
-    ## idendity ##
+    ## identity ##
         # user / uid
-            g2_gen_identity_user(ramdon_num)       
+        id_group = {}
+        id_user = {}
+
+            g2_gen_identity_group(random_num)
+            g2_gen_identity_user(random_num)       
+            g2_gen_identity_proc(id_group, id_user)       
 
         # group / gid / membership
         # password / passwd aging
