@@ -64,4 +64,5 @@ def g2_gen_identity_group(random_num):
     return group_profile
 # test #
 result = g2_gen_identity_group(5)
-general_write("../tmp_file/result", result)
+output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "result"
+general_write(output_path, result)

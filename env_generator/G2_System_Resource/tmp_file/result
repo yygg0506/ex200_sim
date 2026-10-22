@@ -1,0 +1,24 @@
+{
+    "t1": [
+        {
+            "gid": 1040,
+            "group_name": "rhel-98"
+        },
+        {
+            "gid": 1453,
+            "group_name": "exam-50"
+        },
+        {
+            "gid": 1039,
+            "group_name": "exam-55"
+        },
+        {
+            "gid": 1176,
+            "group_name": "ops-1"
+        },
+        {
+            "gid": 1350,
+            "group_name": "dev-88"
+        }
+    ]
+}
