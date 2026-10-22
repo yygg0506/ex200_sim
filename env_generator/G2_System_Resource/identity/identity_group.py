@@ -21,9 +21,11 @@ def g2_gen_identity_group(random_num):
     # GID: [>1000]
         while True:
             gid = random.randint(1000, 2000) 
-            old_gid in gid_list:
-                if grp.getgrgid(old_gid):
-                    break
+            if old_gid in gid_list:
+                continue
+            if grp.getgrgid(old_gid):
+                continue
+            break
 
     # group_name: [name_prefix]+[number]
         name_prefix = random.choice(prefix)
