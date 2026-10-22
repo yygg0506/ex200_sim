@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-def g2_gen():
+import random
 
-    def random_number():
+def g2_gen():
 
     t1_info = {}
     t2_info = {}
-    random_num = random_number()
+    random_num = random.randint(1, 5)
 
 
     ## identity ##
