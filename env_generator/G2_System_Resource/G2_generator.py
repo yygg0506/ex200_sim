@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import random
+from identity.identity_group import g2_gen_identity_group
 
 def g2_gen():
 
