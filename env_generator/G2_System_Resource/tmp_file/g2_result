@@ -2,77 +2,61 @@
     "id_group": {
         "group_profile": [
             {
-                "gid": 1383,
-                "group_name": "exam-91"
+                "gid": 1260,
+                "group_name": "exam-44"
             },
             {
-                "gid": 1073,
-                "group_name": "test-87"
+                "gid": 1253,
+                "group_name": "test-0"
             },
             {
-                "gid": 1622,
-                "group_name": "rhel-6"
-            },
-            {
-                "gid": 1927,
-                "group_name": "test-66"
+                "gid": 1635,
+                "group_name": "dev-9"
             }
         ],
         "grp_name_list": [
-            "exam-91",
-            "test-87",
-            "rhel-6",
-            "test-66"
+            "exam-44",
+            "test-0",
+            "dev-9"
         ]
     },
     "id_user": {
         "user_profile": [
             {
-                "user_name": "exam-804",
-                "uid": 2401,
-                "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/exam-804",
-                "group": {
-                    "primery": "exam-804",
-                    "supply": "test-66"
-                }
-            },
-            {
-                "user_name": "rhel-290",
-                "uid": 1112,
+                "user_name": "user-969",
+                "uid": 1786,
                 "shell": "/bin/bash",
-                "home_dir": "/home/rhel-290",
+                "home_dir": "/home/user-969",
                 "group": {
-                    "primery": "rhel-290",
-                    "supply": "rhel-6"
+                    "primary": "user-969",
+                    "supply": "test-0"
                 }
             },
             {
-                "user_name": "test-500",
-                "uid": 1850,
-                "shell": "/bin/bash",
-                "home_dir": "/home/test-500",
-                "group": {
-                    "primery": "test-500",
-                    "supply": "test-66"
-                }
-            },
-            {
-                "user_name": "test-526",
-                "uid": 1404,
+                "user_name": "user-333",
+                "uid": 1323,
                 "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/test-526",
+                "home_dir": "/home/user-333",
                 "group": {
-                    "primery": "test-526",
-                    "supply": "rhel-6"
+                    "primary": "user-333",
+                    "supply": "exam-44"
+                }
+            },
+            {
+                "user_name": "user-578",
+                "uid": 2086,
+                "shell": "/usr/sbin/nologin",
+                "home_dir": "/home/user-578",
+                "group": {
+                    "primary": "user-578",
+                    "supply": "dev-9"
                 }
             }
         ],
         "usr_name_list": [
-            "exam-804",
-            "rhel-290",
-            "test-500",
-            "test-526"
+            "user-969",
+            "user-333",
+            "user-578"
         ]
     }
 }
