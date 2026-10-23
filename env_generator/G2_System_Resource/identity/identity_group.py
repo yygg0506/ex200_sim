@@ -59,6 +59,7 @@ def g2_gen_identity_group(random_num):
     for i in range(0, random_num):
         group_profile.append(group_detail(gid_list, name_prefix, grp_name_list))
 
+    # output #
     return {
             "group_profile": group_profile, 
             "grp_name_list": grp_name_list,

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import sys
 import random
 import pwd
 
+import sys
 from pathlib import Path
 ENV_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ENV_DIR))
@@ -14,7 +14,7 @@ def g2_gen_identity_user(random_num, grp_name_list):
     ## (random_num) -> loop -> user_detial() -> return [dict]user_profile ##
     user_profile = []
     uid_list = []
-    name_list = []
+    usr_name_list = []
     name_prefix_list = [ "rhel", "test", "exam", "user", "employee" ]
     
 
@@ -62,8 +62,8 @@ def g2_gen_identity_user(random_num, grp_name_list):
                 }
 
         return {
-                "uid": uid,
                 "user_name": user_name,
+                "uid": uid,
                 "shell": shell,
                 "home_dir": home_dir,
                 "group": group,
@@ -72,9 +72,13 @@ def g2_gen_identity_user(random_num, grp_name_list):
 
 
     for i in range(0, random_num):
-        user_profile.append(user_detail(uid_list, name_list, name_prefix_list))
+        user_profile.append(user_detail(uid_list, usr_name_list, name_prefix_list))
 
-    return user_profile
+    # output #
+    return {
+            "user_profile": user_profile,
+            "usr_name_list": usr_name_list,
+            }
 
 # test # 
 if __name__ == "__main__":
