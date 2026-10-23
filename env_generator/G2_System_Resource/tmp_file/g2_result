@@ -1,0 +1,70 @@
+{
+    "id_group": {
+        "group_profile": [
+            {
+                "gid": 1480,
+                "group_name": "exam-14"
+            },
+            {
+                "gid": 1264,
+                "group_name": "rhel-55"
+            },
+            {
+                "gid": 1878,
+                "group_name": "exam-91"
+            },
+            {
+                "gid": 1832,
+                "group_name": "exam-9"
+            }
+        ],
+        "grp_name_list": [
+            "exam-14",
+            "rhel-55",
+            "exam-91",
+            "exam-9"
+        ]
+    },
+    "id_user": [
+        {
+            "uid": 1664,
+            "user_name": "test-470",
+            "shell": "/bin/bash",
+            "home_dir": "/home/test-470",
+            "group": {
+                "primery": "test-470",
+                "supply": "exam-91"
+            }
+        },
+        {
+            "uid": 2430,
+            "user_name": "employee-891",
+            "shell": "/usr/sbin/nologin",
+            "home_dir": "/home/employee-891",
+            "group": {
+                "primery": "employee-891",
+                "supply": "exam-14"
+            }
+        },
+        {
+            "uid": 2378,
+            "user_name": "exam-265",
+            "shell": "/usr/sbin/nologin",
+            "home_dir": "/home/exam-265",
+            "group": {
+                "primery": "exam-265",
+                "supply": "exam-14"
+            }
+        },
+        {
+            "uid": 2354,
+            "user_name": "exam-199",
+            "shell": "/usr/sbin/nologin",
+            "home_dir": "/home/exam-199",
+            "group": {
+                "primery": "exam-199",
+                "supply": "exam-14"
+            }
+        }
+    ]
+}

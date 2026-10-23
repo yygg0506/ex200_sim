@@ -57,5 +57,5 @@ def g2_gen():
 # test # 
 if __name__ == "__main__":
     result = g2_gen()
-    output_path = ENV_DIR / "tmp_file" / "g2_result"
+    output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "g2_result"
     general_write(output_path, result)
