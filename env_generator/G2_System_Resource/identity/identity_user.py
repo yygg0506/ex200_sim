@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 
+import sys
 import random
 import pwd
 
-def g2_gen_identity_user(random_num):
-    random_num = 1
+from pathlib import Path
+ENV_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ENV_DIR))
 
+from lib import general_write
+
+def g2_gen_identity_user(random_num):
     ## (random_num) -> loop -> user_detial() -> return [dict]user_profile ##
     user_profile = {
             "t1": [],
@@ -13,11 +18,10 @@ def g2_gen_identity_user(random_num):
     uid_list = []
     name_list = []
     name_prefix_list = [ "rhel", "test", "exam", "user", "enpolyee" ]
-    shell_list = [ "/bin/bash", "/usr/bin/nologgin", ]
     
 
     # user_detial: -> user_profile["t1"][dict]
-    def user_detail(uid_list, name_list, shell_list, name_prefix_list):
+    def user_detail(uid_list, name_list, name_prefix_list):
         # uid: [>1000, ramdon]
         while True:
             uid = random.randint(1000, 2500)
@@ -38,19 +42,33 @@ def g2_gen_identity_user(random_num):
             if user_name in name_list:
                 continue
             try: 
-                pwd.getpwname(user_name)
+                pwd.getpwnam(user_name)
                 continue
             except KeyError:
                 break
         name_list.append(user_name)
 
-        # group: [main] "[support]"
-
         # shell: '/bin/bash' or '/usr/bin/nologgin'
+        shell_list = [ "/bin/bash", "/usr/bin/nologgin", ]
+        shell = random.choice(shell_list)
+
         # home_dir: [random path]
-        # password / aging: [not_sure]
+        home_dir = f"/home/{user_name}"
+
+        return {
+                "uid": uid,
+                "user_name": user_name,
+                "shell": shell,
+                "home_dir": home_dir
+                }
 
     for i in range(0, random_num):
-        user_profile["t1"].append(user_detail(uid_list, name_list, shell_list, name_prefix_list))
+        user_profile["t1"].append(user_detail(uid_list, name_list, name_prefix_list))
 
     return user_profile
+
+# test # 
+if __name__ == "__main__":
+    result = g2_gen_identity_user(5)
+    output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "result"
+    general_write(output_path, result)
