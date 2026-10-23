@@ -54,7 +54,7 @@ def g2_gen_identity_group(random_num):
         return {
                 "gid": gid,
                 "group_name": group_name,
-                }
+                }, gid_list
 
     for i in range(0, random_num):
         group_profile.append(group_detail(gid_list, name_prefix, grp_name_list))
