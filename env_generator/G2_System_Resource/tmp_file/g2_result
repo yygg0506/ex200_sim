@@ -2,173 +2,109 @@
     "id_group": {
         "group_profile": [
             {
-                "gid": 1749,
-                "group_name": "dev-85"
+                "gid": 1496,
+                "group_name": "test-58"
             },
             {
-                "gid": 1313,
-                "group_name": "exam-86"
+                "gid": 1105,
+                "group_name": "rhel-88"
             },
             {
-                "gid": 1579,
-                "group_name": "rhel-56"
+                "gid": 1786,
+                "group_name": "ops-65"
             },
             {
-                "gid": 1654,
-                "group_name": "test-77"
+                "gid": 1446,
+                "group_name": "rhel-17"
             },
             {
-                "gid": 1510,
+                "gid": 1785,
+                "group_name": "ops-92"
+            },
+            {
+                "gid": 1452,
                 "group_name": "rhel-51"
-            },
-            {
-                "gid": 1996,
-                "group_name": "ops-100"
-            },
-            {
-                "gid": 1416,
-                "group_name": "rhel-39"
-            },
-            {
-                "gid": 1907,
-                "group_name": "rhel-46"
-            },
-            {
-                "gid": 1232,
-                "group_name": "test-68"
-            },
-            {
-                "gid": 1163,
-                "group_name": "test-32"
             }
         ],
         "grp_name_list": [
-            "dev-85",
-            "exam-86",
-            "rhel-56",
-            "test-77",
-            "rhel-51",
-            "ops-100",
-            "rhel-39",
-            "rhel-46",
-            "test-68",
-            "test-32"
+            "test-58",
+            "rhel-88",
+            "ops-65",
+            "rhel-17",
+            "ops-92",
+            "rhel-51"
         ]
     },
     "id_user": {
         "user_profile": [
             {
-                "user_name": "rhel-129",
-                "uid": 1730,
+                "user_name": "user-328",
+                "uid": 2337,
                 "shell": "/bin/bash",
-                "home_dir": "/home/rhel-129",
+                "home_dir": "/home/user-328",
                 "group": {
-                    "primary": "rhel-129",
-                    "supplementary": "test-32"
+                    "primary": "user-328",
+                    "supplementary": "ops-92"
                 }
             },
             {
-                "user_name": "exam-750",
-                "uid": 2021,
-                "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/exam-750",
-                "group": {
-                    "primary": "exam-750",
-                    "supplementary": "rhel-46"
-                }
-            },
-            {
-                "user_name": "user-998",
-                "uid": 1753,
+                "user_name": "test-354",
+                "uid": 2089,
                 "shell": "/bin/bash",
-                "home_dir": "/home/user-998",
+                "home_dir": "/home/test-354",
                 "group": {
-                    "primary": "user-998",
-                    "supplementary": "exam-86"
+                    "primary": "test-354",
+                    "supplementary": "rhel-17"
                 }
             },
             {
-                "user_name": "test-237",
-                "uid": 1669,
-                "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/test-237",
-                "group": {
-                    "primary": "test-237",
-                    "supplementary": "rhel-51"
-                }
-            },
-            {
-                "user_name": "employee-661",
-                "uid": 2181,
+                "user_name": "rhel-154",
+                "uid": 1756,
                 "shell": "/bin/bash",
-                "home_dir": "/home/employee-661",
+                "home_dir": "/home/rhel-154",
                 "group": {
-                    "primary": "employee-661",
-                    "supplementary": "test-32"
+                    "primary": "rhel-154",
+                    "supplementary": "ops-65"
                 }
             },
             {
-                "user_name": "exam-319",
-                "uid": 1257,
+                "user_name": "employee-90",
+                "uid": 1751,
                 "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/exam-319",
+                "home_dir": "/home/employee-90",
                 "group": {
-                    "primary": "exam-319",
-                    "supplementary": "exam-86"
+                    "primary": "employee-90",
+                    "supplementary": "rhel-17"
                 }
             },
             {
-                "user_name": "employee-565",
-                "uid": 2100,
+                "user_name": "test-719",
+                "uid": 2220,
                 "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/employee-565",
+                "home_dir": "/home/test-719",
                 "group": {
-                    "primary": "employee-565",
-                    "supplementary": "rhel-46"
+                    "primary": "test-719",
+                    "supplementary": "ops-65"
                 }
             },
             {
-                "user_name": "user-17",
-                "uid": 2193,
+                "user_name": "exam-331",
+                "uid": 1981,
                 "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/user-17",
+                "home_dir": "/home/exam-331",
                 "group": {
-                    "primary": "user-17",
-                    "supplementary": "test-77"
-                }
-            },
-            {
-                "user_name": "employee-782",
-                "uid": 1298,
-                "shell": "/bin/bash",
-                "home_dir": "/home/employee-782",
-                "group": {
-                    "primary": "employee-782",
-                    "supplementary": "test-32"
-                }
-            },
-            {
-                "user_name": "test-274",
-                "uid": 1173,
-                "shell": "/bin/bash",
-                "home_dir": "/home/test-274",
-                "group": {
-                    "primary": "test-274",
-                    "supplementary": "ops-100"
+                    "primary": "exam-331",
+                    "supplementary": "ops-65"
                 }
             }
         ],
         "usr_name_list": [
-            "rhel-129",
-            "exam-750",
-            "user-998",
-            "test-237",
-            "employee-661",
-            "exam-319",
-            "employee-565",
-            "user-17",
-            "employee-782",
-            "test-274"
+            "user-328",
+            "test-354",
+            "rhel-154",
+            "employee-90",
+            "test-719",
+            "exam-331"
         ]
     }
 }
