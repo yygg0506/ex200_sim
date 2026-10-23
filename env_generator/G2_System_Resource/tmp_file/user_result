@@ -1,32 +1,32 @@
 [
     {
-        "uid": 2048,
-        "user_name": "user-771",
-        "shell": "/usr/sbin/nologin",
-        "home_dir": "/home/user-771"
-    },
-    {
-        "uid": 2323,
-        "user_name": "user-913",
-        "shell": "/usr/sbin/nologin",
-        "home_dir": "/home/user-913"
-    },
-    {
-        "uid": 1592,
-        "user_name": "user-776",
+        "uid": 1092,
+        "user_name": "user-426",
         "shell": "/bin/bash",
-        "home_dir": "/home/user-776"
+        "home_dir": "/home/user-426"
     },
     {
-        "uid": 1765,
-        "user_name": "exam-209",
-        "shell": "/usr/sbin/nologin",
-        "home_dir": "/home/exam-209"
+        "uid": 2336,
+        "user_name": "test-702",
+        "shell": "/bin/bash",
+        "home_dir": "/home/test-702"
     },
     {
-        "uid": 1645,
-        "user_name": "test-338",
+        "uid": 1021,
+        "user_name": "test-495",
+        "shell": "/bin/bash",
+        "home_dir": "/home/test-495"
+    },
+    {
+        "uid": 1474,
+        "user_name": "exam-186",
+        "shell": "/bin/bash",
+        "home_dir": "/home/exam-186"
+    },
+    {
+        "uid": 2089,
+        "user_name": "test-123",
         "shell": "/usr/sbin/nologin",
-        "home_dir": "/home/test-338"
+        "home_dir": "/home/test-123"
     }
 ]
