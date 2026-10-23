@@ -4,6 +4,13 @@ import random
 from identity.identity_group import g2_gen_identity_group
 from identity.identity_user import g2_gen_identity_user
 
+import sys
+from pathlib import Path
+ENV_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ENV_DIR))
+
+from lib import general_write
+
 def g2_gen():
 
     t1_info = {}
@@ -47,6 +54,8 @@ def g2_gen():
         # ACL / default ACL
         # umask
 
-# test #
-result = g2_gen()
-print(result)
+# test # 
+if __name__ == "__main__":
+    result = g2_gen()
+    output_path = ENV_DIR / "tmp_file" / "g2_result"
+    general_write(output_path, result)
