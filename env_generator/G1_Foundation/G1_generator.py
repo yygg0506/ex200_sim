@@ -41,6 +41,7 @@ def g1_gen():
 
     return result
 
+# test #
 if __name__ == "__main__":
     result = g1_gen()
     print(result)
