@@ -17,7 +17,7 @@ def g2_gen_identity_user(random_num):
     
 
     # user_detial: -> user_profile["t1"][dict]
-    def user_detail(uid_list, name_list, shell_list):
+    def user_detail(uid_list, name_list, shell_list, name_prefix_list):
         # uid: [>1000, ramdon]
         while True:
             uid = random.randint(1000, 2500)
@@ -28,6 +28,7 @@ def g2_gen_identity_user(random_num):
                 continue
             except KeyError:
                 break
+        uid_list.append(uid)
                
         # user_name: [name_prefix]+[user_name_num]
         while True:
@@ -39,6 +40,9 @@ def g2_gen_identity_user(random_num):
             try: 
                 pwd.getpwname(user_name)
                 continue
+            except KeyError:
+                break
+        name_list.append(user_name)
 
         # group: [main] "[support]"
 
