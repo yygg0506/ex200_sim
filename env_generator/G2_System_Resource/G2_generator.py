@@ -15,7 +15,7 @@ def g2_gen():
 
     t1_info = {}
     t2_info = {}
-    random_num = random.randint(1, 5)
+    random_num = random.randint(1, 10)
 
 
     ## identity ##
