@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import random
+import pwd
 
 def g2_gen_identity_user(random_num):
     random_num = 1
@@ -11,9 +12,8 @@ def g2_gen_identity_user(random_num):
             }
     uid_list = []
     name_list = []
-    shell_list = [
-            "/bin/bash", "/usr/bin/nologgin", 
-            ]
+    name_prefix_list = [ "rhel", "test", "exam", "user", "enpolyee" ]
+    shell_list = [ "/bin/bash", "/usr/bin/nologgin", ]
     
 
     # user_detial: -> user_profile["t1"][dict]
@@ -23,18 +23,22 @@ def g2_gen_identity_user(random_num):
             uid = random.randint(1000, 2500)
             if uid in uid_list:
                 continue
-            #try: #[not_sure]
+            try: 
+                pwd.getpwuid(uid)
+                continue
+            except KeyError:
+                break
                
         # user_name: [name_prefix]+[user_name_num]
-        user_name_prefix = [
-                "rhel", "test", "exam", "user", "enpolyee"
-                ]
-        user_name_num = random.randint(1, 1000)
         while True:
+            user_name_prefix = random.choice(name_prefix_list)
+            user_name_num = random.randint(1, 1000)
             user_name = f"{user_name_prefix}-{user_name_num}"
-            if user_name in user_list:
+            if user_name in name_list:
                 continue
-            #try: #[not_sure]
+            try: 
+                pwd.getpwname(user_name)
+                continue
 
         # group: [main] "[support]"
 
@@ -42,7 +46,7 @@ def g2_gen_identity_user(random_num):
         # home_dir: [random path]
         # password / aging: [not_sure]
 
-    for i in range(1, random_num):
-        user_profile["t1"].append(user_detail(uid_list, name_list, shell_list))
+    for i in range(0, random_num):
+        user_profile["t1"].append(user_detail(uid_list, name_list, shell_list, name_prefix_list))
 
     return user_profile
