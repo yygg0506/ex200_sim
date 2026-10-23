@@ -2,61 +2,61 @@
     "id_group": {
         "group_profile": [
             {
-                "gid": 1260,
-                "group_name": "exam-44"
+                "gid": 1276,
+                "group_name": "test-72"
             },
             {
-                "gid": 1253,
-                "group_name": "test-0"
+                "gid": 1395,
+                "group_name": "rhel-89"
             },
             {
-                "gid": 1635,
-                "group_name": "dev-9"
+                "gid": 1862,
+                "group_name": "ops-74"
             }
         ],
         "grp_name_list": [
-            "exam-44",
-            "test-0",
-            "dev-9"
+            "test-72",
+            "rhel-89",
+            "ops-74"
         ]
     },
     "id_user": {
         "user_profile": [
             {
-                "user_name": "user-969",
-                "uid": 1786,
-                "shell": "/bin/bash",
-                "home_dir": "/home/user-969",
+                "user_name": "employee-632",
+                "uid": 2357,
+                "shell": "/usr/sbin/nologin",
+                "home_dir": "/home/employee-632",
                 "group": {
-                    "primary": "user-969",
-                    "supply": "test-0"
+                    "primary": "employee-632",
+                    "supplementary": "rhel-89"
                 }
             },
             {
-                "user_name": "user-333",
-                "uid": 1323,
+                "user_name": "employee-931",
+                "uid": 2161,
                 "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/user-333",
+                "home_dir": "/home/employee-931",
                 "group": {
-                    "primary": "user-333",
-                    "supply": "exam-44"
+                    "primary": "employee-931",
+                    "supplementary": "ops-74"
                 }
             },
             {
-                "user_name": "user-578",
-                "uid": 2086,
+                "user_name": "employee-361",
+                "uid": 1166,
                 "shell": "/usr/sbin/nologin",
-                "home_dir": "/home/user-578",
+                "home_dir": "/home/employee-361",
                 "group": {
-                    "primary": "user-578",
-                    "supply": "dev-9"
+                    "primary": "employee-361",
+                    "supplementary": "ops-74"
                 }
             }
         ],
         "usr_name_list": [
-            "user-969",
-            "user-333",
-            "user-578"
+            "employee-632",
+            "employee-931",
+            "employee-361"
         ]
     }
 }

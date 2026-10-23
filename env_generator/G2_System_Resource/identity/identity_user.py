@@ -55,10 +55,10 @@ def g2_gen_identity_user(random_num, grp_name_list):
 
         # group: [primery] [supply]
         grp_primary = user_name
-        grp_supply = random.choice(grp_name_list)
+        grp_supp = random.choice(grp_name_list)
         group = {
                 "primary": grp_primary,
-                "supply": grp_supply,
+                "supplementary": grp_supp,
                 }
 
         return {
