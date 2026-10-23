@@ -18,7 +18,7 @@ def g2_gen_identity_user(random_num):
     name_prefix_list = [ "rhel", "test", "exam", "user", "employee" ]
     
 
-    # user_detial: -> user_profile["t1"][dict]
+    # user_detial: -> user_profile[list]
     def user_detail(uid_list, name_list, name_prefix_list):
         # uid: [>1000, ramdon]
         while True:
@@ -68,5 +68,5 @@ def g2_gen_identity_user(random_num):
 # test # 
 if __name__ == "__main__":
     result = g2_gen_identity_user(5)
-    output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "result"
+    output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "user_result"
     general_write(output_path, result)
