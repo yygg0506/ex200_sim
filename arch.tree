@@ -23,12 +23,14 @@
 |   |   |-- file_system
 |   |   |-- identity
 |   |   |   |-- __pycache__
-|   |   |   |   `-- identity_group.cpython-311.pyc
+|   |   |   |   |-- identity_group.cpython-311.pyc
+|   |   |   |   `-- identity_user.cpython-311.pyc
 |   |   |   |-- identity_group.py
 |   |   |   |-- identity_passwd.py
 |   |   |   `-- identity_user.py
 |   |   |-- storage
 |   |   `-- tmp_file
+|   |       |-- g2_result
 |   |       |-- group_result
 |   |       `-- user_result
 |   |-- G3_System_Operations
@@ -55,4 +57,4 @@
         |-- grader.py
         `-- question.txt
 
-22 directories, 34 files
+22 directories, 36 files

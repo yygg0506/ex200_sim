@@ -1,22 +1,31 @@
-[
-    {
-        "gid": 1891,
-        "group_name": "dev-20"
-    },
-    {
-        "gid": 1138,
-        "group_name": "ops-51"
-    },
-    {
-        "gid": 1879,
-        "group_name": "exam-83"
-    },
-    {
-        "gid": 1542,
-        "group_name": "ops-34"
-    },
-    {
-        "gid": 1410,
-        "group_name": "dev-31"
-    }
-]
+{
+    "group_profile": [
+        {
+            "gid": 1897,
+            "group_name": "test-66"
+        },
+        {
+            "gid": 1188,
+            "group_name": "exam-14"
+        },
+        {
+            "gid": 1750,
+            "group_name": "dev-93"
+        },
+        {
+            "gid": 1139,
+            "group_name": "rhel-54"
+        },
+        {
+            "gid": 1621,
+            "group_name": "dev-81"
+        }
+    ],
+    "grp_name_list": [
+        "test-66",
+        "exam-14",
+        "dev-93",
+        "rhel-54",
+        "dev-81"
+    ]
+}
