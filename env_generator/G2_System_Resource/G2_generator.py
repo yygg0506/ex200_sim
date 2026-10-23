@@ -16,7 +16,7 @@ def g2_gen():
     id_user = {}
 
     id_group = g2_gen_identity_group(random_num)
-    id_user = g2_gen_identity_user(random_num, id_group)       
+    id_user = g2_gen_identity_user(random_num, id_group["grp_name_list"])       
 
     return {
             "id_group": id_group,

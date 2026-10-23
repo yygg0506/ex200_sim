@@ -10,7 +10,7 @@ sys.path.insert(0, str(ENV_DIR))
 
 from lib import general_write
 
-def g2_gen_identity_user(random_num, id_group):
+def g2_gen_identity_user(random_num, grp_name_list):
     ## (random_num) -> loop -> user_detial() -> return [dict]user_profile ##
     user_profile = []
     uid_list = []
@@ -53,6 +53,14 @@ def g2_gen_identity_user(random_num, id_group):
         # home_dir: [random path]
         home_dir = f"/home/{user_name}"
 
+        # group: [primery] [supply]
+        grp_primery = user_name
+        grp_supply = random.choice(grp_name_list)
+        group = {
+                "primery": grp_primery,
+                "supply": grp_supply,
+                }
+
         return {
                 "uid": uid,
                 "user_name": user_name,
@@ -60,7 +68,6 @@ def g2_gen_identity_user(random_num, id_group):
                 "home_dir": home_dir
                 }
 
-        # group: [primery] [supply]
 
 
     for i in range(0, random_num):
