@@ -65,7 +65,8 @@ def g2_gen_identity_user(random_num, grp_name_list):
                 "uid": uid,
                 "user_name": user_name,
                 "shell": shell,
-                "home_dir": home_dir
+                "home_dir": home_dir,
+                "group": group,
                 }
 
 

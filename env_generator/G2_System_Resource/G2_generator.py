@@ -2,6 +2,7 @@
 
 import random
 from identity.identity_group import g2_gen_identity_group
+from identity.identity_user import g2_gen_identity_user
 
 def g2_gen():
 
