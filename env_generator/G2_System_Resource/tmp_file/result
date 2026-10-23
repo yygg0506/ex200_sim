@@ -1,34 +1,22 @@
-{
-    "t1": [
-        {
-            "uid": 1901,
-            "user_name": "enpolyee-269",
-            "shell": "/usr/bin/nologgin",
-            "home_dir": "/home/enpolyee-269"
-        },
-        {
-            "uid": 1250,
-            "user_name": "test-689",
-            "shell": "/bin/bash",
-            "home_dir": "/home/test-689"
-        },
-        {
-            "uid": 1507,
-            "user_name": "exam-736",
-            "shell": "/bin/bash",
-            "home_dir": "/home/exam-736"
-        },
-        {
-            "uid": 2301,
-            "user_name": "exam-132",
-            "shell": "/usr/bin/nologgin",
-            "home_dir": "/home/exam-132"
-        },
-        {
-            "uid": 1369,
-            "user_name": "rhel-97",
-            "shell": "/usr/bin/nologgin",
-            "home_dir": "/home/rhel-97"
-        }
-    ]
-}
+[
+    {
+        "gid": 1912,
+        "group_name": "exam-33"
+    },
+    {
+        "gid": 1260,
+        "group_name": "ops-67"
+    },
+    {
+        "gid": 1949,
+        "group_name": "exam-1"
+    },
+    {
+        "gid": 1163,
+        "group_name": "ops-41"
+    },
+    {
+        "gid": 1082,
+        "group_name": "exam-92"
+    }
+]

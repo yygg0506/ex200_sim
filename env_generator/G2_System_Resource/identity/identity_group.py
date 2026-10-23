@@ -18,10 +18,7 @@ def g2_gen_identity_group(random_num):
     name_prefix = [
             "test", "exam", "rhel", "ops", "dev"
             ]
-    group_profile = {
-            "t1": [],
-            "debug": {},
-            }
+    group_profile = []
 
     # group_detail() -> group_profile["t1"][dict]
     def group_detail(gid_list, prefix, grp_name_list):
@@ -60,12 +57,7 @@ def g2_gen_identity_group(random_num):
                 }
 
     for i in range(0, random_num):
-        group_profile["t1"].append(group_detail(gid_list, name_prefix, grp_name_list))
-
-    group_profile["debug"] = {
-            "gid_list": gid_list, 
-            "grp_name_list": grp_name_list,
-            }
+        group_profile.append(group_detail(gid_list, name_prefix, grp_name_list))
 
     return group_profile
 

@@ -12,12 +12,10 @@ from lib import general_write
 
 def g2_gen_identity_user(random_num):
     ## (random_num) -> loop -> user_detial() -> return [dict]user_profile ##
-    user_profile = {
-            "t1": [],
-            }
+    user_profile = []
     uid_list = []
     name_list = []
-    name_prefix_list = [ "rhel", "test", "exam", "user", "enpolyee" ]
+    name_prefix_list = [ "rhel", "test", "exam", "user", "employee" ]
     
 
     # user_detial: -> user_profile["t1"][dict]
@@ -48,8 +46,8 @@ def g2_gen_identity_user(random_num):
                 break
         name_list.append(user_name)
 
-        # shell: '/bin/bash' or '/usr/bin/nologgin'
-        shell_list = [ "/bin/bash", "/usr/bin/nologgin", ]
+        # shell: '/bin/bash' or '/usr/sbin/nologin'
+        shell_list = [ "/bin/bash", "/usr/sbin/nologin", ]
         shell = random.choice(shell_list)
 
         # home_dir: [random path]
@@ -63,7 +61,7 @@ def g2_gen_identity_user(random_num):
                 }
 
     for i in range(0, random_num):
-        user_profile["t1"].append(user_detail(uid_list, name_list, name_prefix_list))
+        user_profile.append(user_detail(uid_list, name_list, name_prefix_list))
 
     return user_profile
 
