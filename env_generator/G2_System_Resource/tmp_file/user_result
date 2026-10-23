@@ -1,0 +1,32 @@
+[
+    {
+        "uid": 2048,
+        "user_name": "user-771",
+        "shell": "/usr/sbin/nologin",
+        "home_dir": "/home/user-771"
+    },
+    {
+        "uid": 2323,
+        "user_name": "user-913",
+        "shell": "/usr/sbin/nologin",
+        "home_dir": "/home/user-913"
+    },
+    {
+        "uid": 1592,
+        "user_name": "user-776",
+        "shell": "/bin/bash",
+        "home_dir": "/home/user-776"
+    },
+    {
+        "uid": 1765,
+        "user_name": "exam-209",
+        "shell": "/usr/sbin/nologin",
+        "home_dir": "/home/exam-209"
+    },
+    {
+        "uid": 1645,
+        "user_name": "test-338",
+        "shell": "/usr/sbin/nologin",
+        "home_dir": "/home/test-338"
+    }
+]

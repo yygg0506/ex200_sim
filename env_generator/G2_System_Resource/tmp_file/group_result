@@ -1,0 +1,22 @@
+[
+    {
+        "gid": 1891,
+        "group_name": "dev-20"
+    },
+    {
+        "gid": 1138,
+        "group_name": "ops-51"
+    },
+    {
+        "gid": 1879,
+        "group_name": "exam-83"
+    },
+    {
+        "gid": 1542,
+        "group_name": "ops-34"
+    },
+    {
+        "gid": 1410,
+        "group_name": "dev-31"
+    }
+]

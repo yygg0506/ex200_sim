@@ -20,7 +20,7 @@ def g2_gen_identity_group(random_num):
             ]
     group_profile = []
 
-    # group_detail() -> group_profile["t1"][dict]
+    # group_detail() -> group_profile[list]
     def group_detail(gid_list, prefix, grp_name_list):
 
     # GID: [>1000]
@@ -64,5 +64,5 @@ def g2_gen_identity_group(random_num):
 # test #
 if __name__ == "__main__":
     result = g2_gen_identity_group(5)
-    output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "result"
+    output_path = ENV_DIR / "G2_System_Resource" / "tmp_file" / "group_result"
     general_write(output_path, result)
