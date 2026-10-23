@@ -22,6 +22,8 @@
 |   |   |-- G2_generator.py
 |   |   |-- file_system
 |   |   |-- identity
+|   |   |   |-- __pycache__
+|   |   |   |   `-- identity_group.cpython-311.pyc
 |   |   |   |-- identity_group.py
 |   |   |   |-- identity_passwd.py
 |   |   |   `-- identity_user.py
@@ -52,4 +54,4 @@
         |-- grader.py
         `-- question.txt
 
-21 directories, 32 files
+22 directories, 33 files

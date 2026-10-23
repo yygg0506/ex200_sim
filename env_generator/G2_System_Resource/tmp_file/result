@@ -1,40 +1,40 @@
 {
     "t1": [
         {
-            "gid": 1871,
-            "group_name": "rhel-19"
+            "gid": 1813,
+            "group_name": "rhel-9"
         },
         {
-            "gid": 1107,
-            "group_name": "dev-43"
+            "gid": 1205,
+            "group_name": "dev-19"
         },
         {
-            "gid": 1225,
-            "group_name": "dev-7"
+            "gid": 1317,
+            "group_name": "exam-50"
         },
         {
-            "gid": 1336,
-            "group_name": "test-16"
+            "gid": 1291,
+            "group_name": "dev-41"
         },
         {
-            "gid": 1882,
-            "group_name": "dev-36"
+            "gid": 1522,
+            "group_name": "rhel-3"
         }
     ],
     "debug": {
         "gid_list": [
-            1871,
-            1107,
-            1225,
-            1336,
-            1882
+            1813,
+            1205,
+            1317,
+            1291,
+            1522
         ],
         "grp_name_list": [
-            "rhel-19",
-            "dev-43",
-            "dev-7",
-            "test-16",
-            "dev-36"
+            "rhel-9",
+            "dev-19",
+            "exam-50",
+            "dev-41",
+            "rhel-3"
         ]
     }
 }

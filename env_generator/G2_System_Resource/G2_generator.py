@@ -11,13 +11,18 @@ def g2_gen():
 
 
     ## identity ##
-        # user / uid
-        id_group = {}
-        id_user = {}
+    # user / uid
+    id_group = {}
+    id_user = {}
 
-        id_group = g2_gen_identity_group(random_num)
-        id_user = g2_gen_identity_user(random_num)       
-        id_result = g2_gen_identity_proc(id_group, id_user)       
+    id_group = g2_gen_identity_group(random_num)
+    id_user = g2_gen_identity_user(random_num)       
+
+    return {
+            "id_group": id_group,
+            "id_user": id_user,
+            }
+        #id_result = g2_gen_identity_proc(id_group, id_user)       
 
         # group / gid / membership
         # password / passwd aging
@@ -40,3 +45,7 @@ def g2_gen():
     ## resource_policy ##
         # ACL / default ACL
         # umask
+
+# test #
+result = g2_gen()
+print(result)
