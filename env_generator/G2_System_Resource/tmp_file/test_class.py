@@ -12,6 +12,7 @@ class User:
         self.name = name
 
 user = User(1000, "test")
+
 print(user)
 print(user.uid)
 print(user.name)
