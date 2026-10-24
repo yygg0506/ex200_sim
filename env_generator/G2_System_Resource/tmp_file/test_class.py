@@ -13,6 +13,10 @@ class User:
         self.home_dir = home_dir
 
 users = {}
+name_list = []
 for i in data:
     users[i["user_name"]] = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
-    print(users[i["user_name"]].name)
+    name_list.append(i["user_name"])
+
+for i in name_list:
+    print(users[i].name)
