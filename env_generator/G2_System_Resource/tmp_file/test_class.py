@@ -3,6 +3,6 @@
 import json
 
 with open("user_result", "r") as file:
-    data = json.load
+    data = json.load(file)
 
 print(data)
