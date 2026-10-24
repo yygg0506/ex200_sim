@@ -7,11 +7,12 @@ with open("user_result", "r") as file:
 
 user_profile = data[0]
 class User:
-    pass
-user = User()
+    def __init__(self, uid, name):
+        self.uid = uid
+        self.name = name
+
+user = User(1000, "test")
 print(user)
+print(user.uid)
+print(user.name)
 print(type(user))
-print(data[1])
-print(type(data))
-print(user_profile)
-print(type(user_profile))
