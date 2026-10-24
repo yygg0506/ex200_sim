@@ -32,6 +32,7 @@
 |   |   `-- tmp_file
 |   |       |-- g2_result
 |   |       |-- group_result
+|   |       |-- test_class.py
 |   |       `-- user_result
 |   |-- G3_System_Operations
 |   |-- G4_Security_Integration
@@ -57,4 +58,4 @@
         |-- grader.py
         `-- question.txt
 
-22 directories, 36 files
+22 directories, 37 files
