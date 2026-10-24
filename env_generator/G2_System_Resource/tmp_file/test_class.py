@@ -12,7 +12,8 @@ class User:
         self.shell = shell
         self.home_dir = home_dir
 
+users = {}
 for i in data:
-    users = {}
     users[i["user_name"]] = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
-    print(users)
+    
+print(users)
