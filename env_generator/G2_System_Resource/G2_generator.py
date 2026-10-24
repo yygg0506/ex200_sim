@@ -20,6 +20,7 @@ def g2_gen():
 
     ## identity ##
     # user / uid
+    # group / gid / membership
     id_group = {}
     id_user = {}
 
@@ -30,9 +31,6 @@ def g2_gen():
             "id_group": id_group,
             "id_user": id_user,
             }
-        #id_result = g2_gen_identity_proc(id_group, id_user)       
-
-        # group / gid / membership
         # password / passwd aging
 
     ## storage ##
