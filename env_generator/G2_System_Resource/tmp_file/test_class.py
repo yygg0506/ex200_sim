@@ -12,11 +12,15 @@ class User:
         self.shell = shell
         self.home_dir = home_dir
 
+    def show_info(self):
+        print(self.uid)
+        print(self.name)
+        print(self.shell)
+        print(self.home_dir)
+
 users = {}
-name_list = []
 for i in data:
     users[i["user_name"]] = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
-    name_list.append(i["user_name"])
 
-for i in name_list:
-    print(users[i].name)
+for i in users.keys():
+    print(users[i].show_info())
