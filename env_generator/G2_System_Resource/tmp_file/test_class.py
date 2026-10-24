@@ -13,14 +13,11 @@ class User:
         self.home_dir = home_dir
 
     def show_info(self):
-        print(self.uid)
-        print(self.name)
-        print(self.shell)
-        print(self.home_dir)
+        print(f"=== start ===\n{self.uid}\n{self.name}\n{self.shell}\n{self.home_dir}\n=== end ===\n")
 
 users = {}
 for i in data:
     users[i["user_name"]] = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
 
-for i in users.keys():
-    print(users[i].show_info())
+for i in users:
+    users[i].show_info()
