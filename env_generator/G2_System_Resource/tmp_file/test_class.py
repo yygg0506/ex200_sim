@@ -15,5 +15,4 @@ class User:
 users = {}
 for i in data:
     users[i["user_name"]] = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
-    
-print(users)
+    print(users[i["user_name"]].name)
