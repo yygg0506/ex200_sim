@@ -5,15 +5,19 @@ import json
 with open("user_result", "r") as file:
     data = json.load(file)
 
-user_profile = data[0]
 class User:
-    def __init__(self, uid, name):
+    def __init__(self, uid, name, shell, home_dir):
         self.uid = uid
         self.name = name
+        self.shell = shell
+        self.home_dir = home_dir
 
-user = User(1000, "test")
+for i in data:
+    user_name = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
 
-print(user)
-print(user.uid)
-print(user.name)
-print(type(user))
+    print(user_name)
+    print(user_name.uid)
+    print(user_name.name)
+    print(user_name.shell)
+    print(user_name.home_dir)
+    print(type(user_name))
