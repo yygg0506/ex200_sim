@@ -5,4 +5,7 @@ import json
 with open("user_result", "r") as file:
     data = json.load(file)
 
-print(data)
+for i in data:
+    print(i)
+    print(type(i))
+print(type(data))
