@@ -18,7 +18,7 @@ class User:
         print(f"=== start ===\n{self.uid}\n{self.name}\n{self.shell}\n{self.home_dir}\n=== end ===\n")
 
 class Group:
-    name_prefix = ["test", "exam", "rhel", "ops", "dev"]
+    prefix = ["test", "exam", "rhel", "ops", "dev"]
         
     # group_detail() -> group_profile[list]
     def group_detail(self, gid_list, grp_name_list):
@@ -39,7 +39,7 @@ class Group:
 
     # group_name: [name_prefix]+[number]
         while True:
-            name_prefix = random.choice(name_prefix)
+            name_prefix = random.choice(self.prefix)
             grp_name_num = random.randint(0, 100)
             group_name = f"{name_prefix}-{grp_name_num}" 
             if group_name in grp_name_list:
@@ -51,10 +51,10 @@ class Group:
                 break
             
         grp_name_list.append(group_name)
-        self.grp_name = grp_name
+        self.group_name = group_name
 
     def __init__(self, gid_list, grp_name_list):
-        self.group_detail(self, gid_list, grp_name_list)
+        self.group_detail(gid_list, grp_name_list)
 
 users = {}
 for i in data:
@@ -68,4 +68,4 @@ grp_name_list = []
 
 group = Group(gid_list, grp_name_list)
 print(group.gid)
-print(group.grp_name)
+print(group.group_name)
