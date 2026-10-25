@@ -2,6 +2,7 @@
 
 import json
 import random
+import grp
 
 with open("user_result", "r") as file:
     data = json.load(file)
@@ -20,7 +21,7 @@ class Group:
     name_prefix = ["test", "exam", "rhel", "ops", "dev"]
         
     # group_detail() -> group_profile[list]
-    def group_detail(self, gid_list, prefix, grp_name_list):
+    def group_detail(self, gid_list, grp_name_list):
 
     # GID: [>1000]
         while True:
@@ -38,7 +39,7 @@ class Group:
 
     # group_name: [name_prefix]+[number]
         while True:
-            name_prefix = random.choice(prefix)
+            name_prefix = random.choice(name_prefix)
             grp_name_num = random.randint(0, 100)
             group_name = f"{name_prefix}-{grp_name_num}" 
             if group_name in grp_name_list:
@@ -53,7 +54,7 @@ class Group:
         self.grp_name = grp_name
 
     def __init__(self, gid_list, grp_name_list):
-        group_detail(self, gid_list, grp_name_list)
+        self.group_detail(self, gid_list, grp_name_list)
 
 users = {}
 for i in data:
@@ -61,3 +62,10 @@ for i in data:
 
 for i in users:
     users[i].show_info()
+
+gid_list = []
+grp_name_list = []
+
+group = Group(gid_list, grp_name_list)
+print(group.gid)
+print(group.grp_name)
