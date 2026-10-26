@@ -7,41 +7,23 @@ import grp
 with open("user_result", "r") as file:
     data = json.load(file)
 
-class User:
-    def __init__(self, uid, name, shell, home_dir):
-        self.uid = uid
-        self.name = name
-        self.shell = shell
-        self.home_dir = home_dir
-
-    def show_info(self):
-        print(f"=== start ===\n{self.uid}\n{self.name}\n{self.shell}\n{self.home_dir}\n=== end ===\n")
+# Group
+grp_name_list = []
+gid_list = []
 
 class Group:
-    prefix = ["test", "exam", "rhel", "ops", "dev"]
-        
-    # group_detail() -> group_profile[list]
-    def group_detail(self, gid_list, grp_name_list):
+    name_prefix = ["test", "exam", "rhel", "ops", "dev"]
+    group_id = random.randint(1,1000)
 
-    # GID: [>1000]
+    def __init__(self, gid_list, grp_name_list):
+
+    # group_name
+    def gen_group_name(self):
         while True:
-            gid = random.randint(1000, 2000) 
-            if gid in gid_list:
-                continue
-            try:
-                grp.getgrgid(gid)
-                continue
-            except KeyError:
-                break
+            group_name_prefix = name_prefix.choice()
+            group_name_num = random.randint(1,100)
+            group_name = f"{group_name_prefix}-{group_name_num}"
 
-        gid_list.append(gid)
-        self.gid = gid
-
-    # group_name: [name_prefix]+[number]
-        while True:
-            name_prefix = random.choice(self.prefix)
-            grp_name_num = random.randint(0, 100)
-            group_name = f"{name_prefix}-{grp_name_num}" 
             if group_name in grp_name_list:
                 continue
             try:
@@ -49,23 +31,24 @@ class Group:
                 continue
             except KeyError:
                 break
-            
+
         grp_name_list.append(group_name)
-        self.group_name = group_name
+        self.name = group_name
 
-    def __init__(self, gid_list, grp_name_list):
-        self.group_detail(gid_list, grp_name_list)
 
-users = {}
-for i in data:
-    users[i["user_name"]] = User(i["uid"], i["user_name"], i["shell"], i["home_dir"])
+    # group_id
+    def gen_group_id(self):
+        while True:
+            group_id = random.randint(1,1000)
+            
+            if group_id in gid_list:
+                continue
+            try:
+                grp.getgrgid(group_id)
+                continue
+            except KeyError:
+                break
 
-for i in users:
-    users[i].show_info()
+        gid_list.append(group_id)
+        self.id = group.id
 
-gid_list = []
-grp_name_list = []
-
-group = Group(gid_list, grp_name_list)
-print(group.gid)
-print(group.group_name)
