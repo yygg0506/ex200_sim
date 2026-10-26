@@ -15,15 +15,15 @@ gid_list = []
 group_info_list = []
 
 class Group:
-    name_prefix = ["test", "exam", "rhel", "ops", "dev"]
-    group_id = random.randint(1,1000)
-
     def __init__(self, gid_list, grp_name_list):
+        name_prefix = ["test", "exam", "rhel", "ops", "dev"]
+        self.gen_group_name(name_prefix, grp_name_list)
+        self.gen_group_id(gid_list)
 
     # group_name
-    def gen_group_name(self):
+    def gen_group_name(self, name_prefix, grp_name_list):
         while True:
-            group_name_prefix = name_prefix.choice()
+            group_name_prefix = random.choice(name_prefix)
             group_name_num = random.randint(1,100)
             group_name = f"{group_name_prefix}-{group_name_num}"
 
@@ -40,7 +40,7 @@ class Group:
 
 
     # group_id
-    def gen_group_id(self):
+    def gen_group_id(self, gid_list):
         while True:
             group_id = random.randint(1,1000)
             
@@ -53,10 +53,11 @@ class Group:
                 break
 
         gid_list.append(group_id)
-        self.id = group.id
+        self.id = group_id
 
 for i in group_data:
-    group = Group(i)
+    group = Group(gid_list, grp_name_list)
     group_info_list.append(group)
     
+print(group_data)
 print(group_info_list)
