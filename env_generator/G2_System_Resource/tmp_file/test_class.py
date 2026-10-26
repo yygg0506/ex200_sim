@@ -5,11 +5,14 @@ import random
 import grp
 
 with open("user_result", "r") as file:
-    data = json.load(file)
+    user_data = json.load(file)
+with open("group_result", "r") as file:
+    group_data = json.load(file)
 
 # Group
 grp_name_list = []
 gid_list = []
+group_info_list = []
 
 class Group:
     name_prefix = ["test", "exam", "rhel", "ops", "dev"]
@@ -52,3 +55,8 @@ class Group:
         gid_list.append(group_id)
         self.id = group.id
 
+for i in group_data:
+    group = Group(i)
+    group_info_list.append(group)
+    
+print(group_info_list)
