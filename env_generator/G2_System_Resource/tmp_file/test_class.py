@@ -56,7 +56,7 @@ class Group:
         self.id = group_id
 
     def __repr__(self):
-        return f"Group(id={self.id}, name={self.name})\n"
+        return f"Group(id={self.id}, name={self.name})"
 
 for i in range(5):
     group = Group(gid_list, grp_name_list)
