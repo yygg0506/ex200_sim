@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-
+# general import
 import random
-from identity.identity_group import g2_gen_identity_group
-from identity.identity_user import g2_gen_identity_user
-
 import sys
 from pathlib import Path
 ENV_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
+# from lib
+from identity.identity_group import g2_gen_identity_group
+from identity.identity_user import g2_gen_identity_user
 from lib import general_write
 
 def g2_gen():

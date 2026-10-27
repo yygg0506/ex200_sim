@@ -9,6 +9,7 @@ class Group:
         self.gen_group_name(group_name_list)
         self.gen_group_id(group_id_list)
 
+    # grop_name -> Group.name([name_prefix]-[name_num])
     def gen_group_name(self, group_name_list):
         group_name_prefix_list = ["test", "rhel", "exam", "ops", "dev"]
         while True:
@@ -26,6 +27,7 @@ class Group:
         self.name = group_name
         group_name_list.append(group_name)
 
+    # group_id -> Group_id(1000-2000)
     def gen_group_id(self):
         while True:
             group_id = random.randint(1000, 2000)

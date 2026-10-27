@@ -1,69 +1,22 @@
 #!/usr/bin/env python3
-
 import sys
-import grp
-import random
-
 from pathlib import Path
 ENV_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
-from lib import general_write
+import grp
+import random
+from lib import Group, general_write
 
-def g2_gen_identity_group(random_num):
-    ## (random_num) -> loop -> group_detail() -> return [dict]group_profile
-    
-    gid_list = []
-    grp_name_list = []
-    name_prefix = [
-            "test", "exam", "rhel", "ops", "dev"
-            ]
-    group_profile = []
+def g2_gen_ideentity_group(random_num):
+    group_name_list = []
+    group_id_list = []
+    group_list = []
 
-    # group_detail() -> group_profile[list]
-    def group_detail(gid_list, prefix, grp_name_list):
-
-    # GID: [>1000]
-        while True:
-            gid = random.randint(1000, 2000) 
-            if gid in gid_list:
-                continue
-            try:
-                grp.getgrgid(gid)
-                continue
-            except KeyError:
-                break
-
-        gid_list.append(gid)
-
-    # group_name: [name_prefix]+[number]
-        while True:
-            name_prefix = random.choice(prefix)
-            grp_name_num = random.randint(0, 100)
-            group_name = f"{name_prefix}-{grp_name_num}" 
-            if group_name in grp_name_list:
-                continue
-            try:
-                grp.getgrnam(group_name)
-                continue
-            except KeyError:
-                break
-            
-        grp_name_list.append(group_name)
-
-        return {
-                "gid": gid,
-                "group_name": group_name,
-                }
-
-    for i in range(0, random_num):
-        group_profile.append(group_detail(gid_list, name_prefix, grp_name_list))
-
-    # output #
-    return {
-            "group_profile": group_profile, 
-            "grp_name_list": grp_name_list,
-            }
+    for _ in range(0,random_num):
+        new_group = Group(group_name_list, group_id_list)
+        group_list.append(new_group)
+    return griup_list
 
 # test #
 if __name__ == "__main__":
