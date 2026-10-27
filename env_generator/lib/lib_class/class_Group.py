@@ -15,12 +15,12 @@ class Group:
         while True:
             group_name_num = random.randint(1,100)
             group_name_prefix = random.choice(group_name_prefix_list)
-            group_name = f"{group_name_prefix}-{group_name_id}"
+            group_name = f"{group_name_prefix}-{group_name_num}"
 
             if group_name in group_name_list:
                 continue
             try:
-                gre.getgrnme(group_name)
+                grp.getgrnam(group_name)
                 continue
             except KeyError:
                 break
@@ -28,11 +28,11 @@ class Group:
         group_name_list.append(group_name)
 
     # group_id -> Group_id(1000-2000)
-    def gen_group_id(self):
+    def gen_group_id(self, group_id_list):
         while True:
             group_id = random.randint(1000, 2000)
 
-            if group_id in group_id__list:
+            if group_id in group_id_list:
                 continue
             try:
                 grp.getgrgid(group_id)
@@ -43,4 +43,4 @@ class Group:
         group_id_list = group_id
 
     def __repr__(self):
-        return f"{Group(id={group_id},name={group_name})"
+        return f"Group(id={self.id},name={self.name})"

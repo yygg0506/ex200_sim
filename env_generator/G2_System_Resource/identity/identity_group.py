@@ -8,7 +8,7 @@ import grp
 import random
 from lib import Group, general_write
 
-def g2_gen_ideentity_group(random_num):
+def g2_gen_identity_group(random_num):
     group_name_list = []
     group_id_list = []
     group_list = []
@@ -16,7 +16,7 @@ def g2_gen_ideentity_group(random_num):
     for _ in range(0,random_num):
         new_group = Group(group_name_list, group_id_list)
         group_list.append(new_group)
-    return griup_list
+    return group_list
 
 # test #
 if __name__ == "__main__":

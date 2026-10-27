@@ -49,10 +49,12 @@
 |       |   |-- __init__.cpython-311.pyc
 |       |   |-- file_write.cpython-311.pyc
 |       |   `-- info_proc.cpython-311.pyc
-|       |-- class
-|       |   `-- class_Group.py
 |       |-- file_write.py
-|       `-- info_proc.py
+|       |-- info_proc.py
+|       `-- lib_class
+|           |-- __pycache__
+|           |   `-- class_Group.cpython-311.pyc
+|           `-- class_Group.py
 `-- not_sure
     `-- TEST-G1-01
         |-- env.sh
@@ -60,4 +62,4 @@
         |-- grader.py
         `-- question.txt
 
-23 directories, 38 files
+24 directories, 39 files
