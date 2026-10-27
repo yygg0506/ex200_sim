@@ -55,9 +55,11 @@ class Group:
         gid_list.append(group_id)
         self.id = group_id
 
-for i in group_data:
+    def __repr__(self):
+        return f"Group(id={self.id}, name={self.name})\n"
+
+for i in range(5):
     group = Group(gid_list, grp_name_list)
     group_info_list.append(group)
     
-print(group_data)
 print(group_info_list)
