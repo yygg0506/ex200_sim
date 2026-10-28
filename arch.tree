@@ -55,7 +55,7 @@
 |           |-- __pycache__
 |           |   `-- class_Group.cpython-311.pyc
 |           |-- class_Group.py
-|           `-- class_user.py
+|           `-- class_Users.py
 `-- not_sure
     `-- TEST-G1-01
         |-- env.sh
