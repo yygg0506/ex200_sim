@@ -17,7 +17,7 @@ def g2_gen_identity_user(random_num, grp_name_list):
     usr_name_list = []
     name_prefix_list = [ "rhel", "test", "exam", "user", "employee" ]
     
-
+    
     # user_detial: -> user_profile[list]
     def user_detail(uid_list, name_list, name_prefix_list):
         # uid: [>1000, ramdon]
@@ -25,7 +25,7 @@ def g2_gen_identity_user(random_num, grp_name_list):
             uid = random.randint(1000, 2500)
             if uid in uid_list:
                 continue
-            try: 
+            try:
                 pwd.getpwuid(uid)
                 continue
             except KeyError:

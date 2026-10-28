@@ -43,7 +43,7 @@ class Group:
         group_id_list.append(group_id)
 
     # to_dict -> {gid:gid, name:name}
-    def to_dict(self):
+    def dict(self):
         return {
                 "gid": self.id,
                 "group_name": self.name
