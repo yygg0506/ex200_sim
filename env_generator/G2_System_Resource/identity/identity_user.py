@@ -31,8 +31,8 @@ def g2_gen_identity_user(random_num, grp_name_list):
             except KeyError:
                 break
         uid_list.append(uid)
-               
         # user_name: [name_prefix]+[user_name_num]
+
         while True:
             user_name_prefix = random.choice(name_prefix_list)
             user_name_num = random.randint(1, 1000)
