@@ -40,7 +40,7 @@ class Group:
             except KeyError:
                 break
         self.id = group_id
-        group_id_list = group_id
+        group_id_list.append(group_id)
 
     # to_dict -> {gid:gid, name:name}
     def to_dict(self):

@@ -28,7 +28,8 @@ def g2_gen():
     for i in id_group_list:
         id_group_dict_list.append(i.to_dict())
 
-    return f"id_group_list=\n\t{id_group_list},\nid_group_dict_list=\n\t{id_group_dict_list}"
+    print(f"id_group_list=\n\t{id_group_list},\nid_group_dict_list=\n\t{id_group_dict_list}")
+    return id_group_dict_list
 
     #id_user = g2_gen_identity_user(random_num, id_group["grp_name_list"])       
 
@@ -56,4 +57,5 @@ def g2_gen():
 # test # 
 if __name__ == "__main__":
     result = g2_gen()
-    print(result)
+    output_path = Path(f"{ENV_DIR}/G2_System_Resource/tmp_file/g2_result")
+    general_write(output_path, result)
