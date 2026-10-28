@@ -4,7 +4,7 @@ import random
 import grp
 
 class Group:
-    # Group -> (group_name[str], group_id[str])
+    # Group -> (group_name[str], group_id[str]) -> dict
     def __init__(self, group_name_list, group_id_list):
         self.gen_group_name(group_name_list)
         self.gen_group_id(group_id_list)
@@ -41,6 +41,13 @@ class Group:
                 break
         self.id = group_id
         group_id_list = group_id
+
+    # to_dict -> {gid:gid, name:name}
+    def to_dict(self):
+        return {
+                "gid": self.id,
+                "group_name": self.name
+                }
 
     def __repr__(self):
         return f"Group(id={self.id},name={self.name})"

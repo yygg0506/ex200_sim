@@ -21,16 +21,17 @@ def g2_gen():
     ## identity ##
     # user / uid
     # group / gid / membership
-    id_group = {}
     id_user = {}
 
-    id_group = g2_gen_identity_group(random_num)
-    id_user = g2_gen_identity_user(random_num, id_group["grp_name_list"])       
+    id_group_list = g2_gen_identity_group(random_num)
+    id_group_dict_list = []
+    for i in id_group_list:
+        id_group_dict_list.append(i.to_dict())
 
-    return {
-            "id_group": id_group,
-            "id_user": id_user,
-            }
+    return id_group_list, id_group_dict_list
+
+    #id_user = g2_gen_identity_user(random_num, id_group["grp_name_list"])       
+
         # password / passwd aging
 
     ## storage ##
