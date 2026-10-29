@@ -64,6 +64,15 @@ class User:
 
     #home_dir
 
+    #to_dict
+    def to_dict(self):
+        return {
+                "id": self.id,
+                "name": self.name,
+                "shell": self.shell,
+                "group": self.group,
+                }
+
     def __repr__(self):
         return f"User(id={self.id}, name={self.name}, shell={self.shell}, group={self.group})"
 

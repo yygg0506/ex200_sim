@@ -19,19 +19,20 @@ def g2_gen():
 
 
     ## identity ##
-    # user / uid
     # group / gid / membership
-    id_user = {}
+    group_list = g2_gen_identity_group(random_num)
+    group_dict_list = []
+    for i in group_list:
+        group_dict_list.append(i.to_dict())
 
-    id_group_list = g2_gen_identity_group(random_num)
-    id_group_dict_list = []
-    for i in id_group_list:
-        id_group_dict_list.append(i.to_dict())
+    # user / uid
+    user_list = g2_gen_identity_user(random_num, group_list)       
+    user_dict_list = []
+    for i in user_list:
+        user_dict_list.append(i.to_dict())
 
-    print(f"id_group_list=\n\t{id_group_list},\nid_group_dict_list=\n\t{id_group_dict_list}")
-    return id_group_dict_list
+    return user_dict_list
 
-    id_user = g2_gen_identity_user(random_num, id_group_list)       
 
         # password / passwd aging
 

@@ -1,6 +1,38 @@
 [
     {
-        "gid": 1657,
-        "group_name": "ops-47"
+        "id": 1814,
+        "name": "exam-71",
+        "shell": "/usr/sbin/nologin",
+        "group": {
+            "group_primary": "exam-71",
+            "group_supp": "dev-23"
+        }
+    },
+    {
+        "id": 1198,
+        "name": "user-70",
+        "shell": "/bin/bash",
+        "group": {
+            "group_primary": "user-70",
+            "group_supp": "dev-71"
+        }
+    },
+    {
+        "id": 1358,
+        "name": "test-7",
+        "shell": "/bin/bash",
+        "group": {
+            "group_primary": "test-7",
+            "group_supp": "test-64"
+        }
+    },
+    {
+        "id": 1919,
+        "name": "user-21",
+        "shell": "/usr/sbin/nologin",
+        "group": {
+            "group_primary": "user-21",
+            "group_supp": "dev-71"
+        }
     }
 ]
