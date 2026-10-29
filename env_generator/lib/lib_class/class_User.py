@@ -14,10 +14,10 @@ class User:
     #user_name -> [prefix] + [number]
     def gen_user_name(self, user_name_list):
         user_name_prefix_list = [ "rhel", "test", "exam", "user", "employee" ]
-        user_name_prefix = random.choice(user_name_prefix_list)
-        user_name_num = random.randint(1,100)
 
         while True:
+            user_name_prefix = random.choice(user_name_prefix_list)
+            user_name_num = random.randint(1,100)
             user_name = f"{user_name_prefix}-{user_name_num}"
             if user_name in user_name_list:
                 continue
