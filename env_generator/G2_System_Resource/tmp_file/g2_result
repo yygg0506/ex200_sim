@@ -1,26 +1,6 @@
 [
     {
-        "gid": 1887,
-        "group_name": "dev-36"
-    },
-    {
-        "gid": 1801,
-        "group_name": "dev-35"
-    },
-    {
-        "gid": 1622,
-        "group_name": "dev-93"
-    },
-    {
-        "gid": 1222,
-        "group_name": "rhel-35"
-    },
-    {
-        "gid": 1958,
-        "group_name": "ops-92"
-    },
-    {
-        "gid": 1529,
-        "group_name": "test-97"
+        "gid": 1657,
+        "group_name": "ops-47"
     }
 ]

@@ -7,6 +7,9 @@ class User:
     def __init__(self, user_name_list, user_id_list, group_list):
         self.gen_user_name(user_name_list)
         self.gen_user_id(user_id_list)
+        self.gen_user_shell()
+        #self.gen_user_home_dir()
+        self.gen_user_group(group_list)
 
     #user_name -> [prefix] + [number]
     def gen_user_name(self, user_name_list):
@@ -24,7 +27,7 @@ class User:
             except KeyError:
                 break
 
-        User.name = user_name
+        self.name = user_name
         user_name_list.append(user_name)
 
     #user_id -> [1000-2000]
@@ -35,25 +38,42 @@ class User:
             if user_id in user_id_list:
                 continue
             try:
-                pwd.getpwpid(user_id)
+                pwd.getpwuid(user_id)
                 continue
             except KeyError:
                 break
 
-        User.id = user_id
+        self.id = user_id
         user_id_list.append(user_id)
 
     #shell
     def gen_user_shell(self):
         shell_list = [ "/bin/bash", "/usr/sbin/nologin", ]
         shell = random.choice(shell_list)
+        self.shell = shell
 
     #user's group
     def gen_user_group(self, group_list):
-        group_supp = random.choice(group_list).grpup_supp
-        group_primary = self.group_primary
+        group_supp = random.choice(group_list)
+        group_primary = self.name
+        group = {
+                "group_primary": group_primary,
+                "group_supp": group_supp,
+                }
+        self.group = group
 
     #home_dir
 
     def __repr__(self):
-        return f"User(id={self.id}, name={self.name}, shell={self.shell}, group_primary={self.group_primary}, group_supp={self.group_supp})"
+        return f"User(id={self.id}, name={self.name}, shell={self.shell}, group={self.group})"
+
+# test
+if __name__ == "__main__":
+    group_list = []
+    for _ in range(5):
+        user_name_list = []
+        user_id_list = []
+        group = Group(group_name_list, group_id_list)
+        group_list.append(group)
+    print(group_list)
+

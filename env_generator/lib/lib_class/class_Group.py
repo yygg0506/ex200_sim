@@ -51,3 +51,14 @@ class Group:
 
     def __repr__(self):
         return f"Group(id={self.id},name={self.name})"
+
+# test 
+if __name__ == "__main__":
+    group_list = []
+    for _ in range(5):
+        group_name_list = []
+        group_id_list = []
+        group = Group(group_name_list, group_id_list)
+        group_list.append(group)
+    print(group_list)
+
