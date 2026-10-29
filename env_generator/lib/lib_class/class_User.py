@@ -16,9 +16,9 @@ class User:
         user_name_prefix_list = [ "rhel", "test", "exam", "user", "employee" ]
         user_name_prefix = random.choice(user_name_prefix_list)
         user_name_num = random.randint(1,100)
-        user_name = f"{user_name_prefix}-{user_name_num}"
 
         while True:
+            user_name = f"{user_name_prefix}-{user_name_num}"
             if user_name in user_name_list:
                 continue
             try:
@@ -32,9 +32,9 @@ class User:
 
     #user_id -> [1000-2000]
     def gen_user_id(self, user_id_list):
-        user_id = random.randint(1000,2000)
         
         while True:
+            user_id = random.randint(1000,2000)
             if user_id in user_id_list:
                 continue
             try:
@@ -58,7 +58,7 @@ class User:
         group_primary = self.name
         group = {
                 "group_primary": group_primary,
-                "group_supp": group_supp,
+                "group_supp": group_supp.name,
                 }
         self.group = group
 
@@ -66,14 +66,4 @@ class User:
 
     def __repr__(self):
         return f"User(id={self.id}, name={self.name}, shell={self.shell}, group={self.group})"
-
-# test
-if __name__ == "__main__":
-    group_list = []
-    for _ in range(5):
-        user_name_list = []
-        user_id_list = []
-        group = Group(group_name_list, group_id_list)
-        group_list.append(group)
-    print(group_list)
 
