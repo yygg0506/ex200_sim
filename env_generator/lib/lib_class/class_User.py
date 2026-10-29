@@ -8,7 +8,7 @@ class User:
         self.gen_user_name(user_name_list)
         self.gen_user_id(user_id_list)
         self.gen_user_shell()
-        #self.gen_user_home_dir()
+        self.gen_user_home_dir()
         self.gen_user_group(group_list)
 
     #user_name -> [prefix] + [number]
@@ -63,6 +63,9 @@ class User:
         self.group = group
 
     #home_dir
+    def gen_user_home_dir(self):
+        home_dir = f"/home/{self.name}"
+        self.home_dir = home_dir
 
     #to_dict
     def to_dict(self):
@@ -71,6 +74,7 @@ class User:
                 "name": self.name,
                 "shell": self.shell,
                 "group": self.group,
+                "home_dir": self.home_dir,
                 }
 
     def __repr__(self):

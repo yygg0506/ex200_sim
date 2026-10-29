@@ -15,7 +15,7 @@ def g2_gen():
 
     t1_info = {}
     t2_info = {}
-    random_num = random.randint(1, 10)
+    random_num = 2
 
 
     ## identity ##
@@ -31,7 +31,10 @@ def g2_gen():
     for i in user_list:
         user_dict_list.append(i.to_dict())
 
-    return user_dict_list
+    return {
+            "group": group_dict_list,
+            "user": user_dict_list
+            }
 
 
         # password / passwd aging
