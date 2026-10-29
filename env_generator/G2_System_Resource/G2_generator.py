@@ -18,7 +18,7 @@ def g2_gen():
     random_num = 2
 
 
-    ## identity ##
+## identity ##
     # group / gid / membership
     group_list = g2_gen_identity_group(random_num)
     group_dict_list = []
@@ -37,7 +37,7 @@ def g2_gen():
             }
 
 
-        # password / passwd aging
+    # password / passwd aging
 
     ## storage ##
         # disk partion

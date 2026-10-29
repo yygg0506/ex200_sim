@@ -52,10 +52,12 @@
 |       |-- file_write.py
 |       |-- info_proc.py
 |       `-- lib_class
+|           |-- 2
 |           |-- __pycache__
 |           |   |-- class_Group.cpython-311.pyc
 |           |   `-- class_User.cpython-311.pyc
 |           |-- class_Group.py
+|           |-- class_Passwd.py
 |           `-- class_User.py
 `-- not_sure
     `-- TEST-G1-01
@@ -64,4 +66,4 @@
         |-- grader.py
         `-- question.txt
 
-24 directories, 41 files
+24 directories, 43 files

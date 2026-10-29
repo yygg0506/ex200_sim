@@ -8,7 +8,7 @@ from pathlib import Path
 ENV_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
-from lib import User, Group
+from lib import User, Group, Passwd
 
 def g2_gen_identity_user(random_num, group_list):
     user_name_list = []
