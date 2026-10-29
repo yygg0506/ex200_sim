@@ -53,9 +53,10 @@
 |       |-- info_proc.py
 |       `-- lib_class
 |           |-- __pycache__
-|           |   `-- class_Group.cpython-311.pyc
+|           |   |-- class_Group.cpython-311.pyc
+|           |   `-- class_User.cpython-311.pyc
 |           |-- class_Group.py
-|           `-- class_Users.py
+|           `-- class_User.py
 `-- not_sure
     `-- TEST-G1-01
         |-- env.sh
@@ -63,4 +64,4 @@
         |-- grader.py
         `-- question.txt
 
-24 directories, 40 files
+24 directories, 41 files

@@ -15,28 +15,30 @@ class User:
         user_name_num = random.randint(1,100)
         user_name = f"{user_name_prefix}-{user_name_num}"
 
-        if user_name in user_name_list:
-            continue
-        try:
-            pwd.getpwnam(user_name)
-            continue
-        except KeyError:
-            break
+        while True:
+            if user_name in user_name_list:
+                continue
+            try:
+                pwd.getpwnam(user_name)
+                continue
+            except KeyError:
+                break
 
         User.name = user_name
         user_name_list.append(user_name)
 
     #user_id -> [1000-2000]
-    def gen_user_id(self, user_id_list)
+    def gen_user_id(self, user_id_list):
         user_id = random.randint(1000,2000)
         
-        if user_id in user_id_list:
-            continue
-        try:
-            pwd.getpwpid(user_id)
-            continue
-        except KeyError:
-            break
+        while True:
+            if user_id in user_id_list:
+                continue
+            try:
+                pwd.getpwpid(user_id)
+                continue
+            except KeyError:
+                break
 
         User.id = user_id
         user_id_list.append(user_id)
@@ -48,9 +50,10 @@ class User:
 
     #user's group
     def gen_user_group(self, group_list):
-        group_supp = random.choice(group_list).name
-        group_primary = self.name
+        group_supp = random.choice(group_list).grpup_supp
+        group_primary = self.group_primary
 
     #home_dir
 
     def __repr__(self):
+        return f"User(id={self.id}, name={self.name}, shell={self.shell}, group_primary={self.group_primary}, group_supp={self.group_supp})"

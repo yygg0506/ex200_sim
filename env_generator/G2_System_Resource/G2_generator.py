@@ -31,7 +31,7 @@ def g2_gen():
     print(f"id_group_list=\n\t{id_group_list},\nid_group_dict_list=\n\t{id_group_dict_list}")
     return id_group_dict_list
 
-    #id_user = g2_gen_identity_user(random_num, id_group["grp_name_list"])       
+    id_user = g2_gen_identity_user(random_num, id_group_list)       
 
         # password / passwd aging
 
