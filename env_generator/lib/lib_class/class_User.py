@@ -4,12 +4,13 @@ import random
 import pwd
 
 class User:
-    def __init__(self, user_name_list, user_id_list, group_list):
+    def __init__(self, user_name_list, user_id_list, group_list, passwd):
         self.gen_user_name(user_name_list)
         self.gen_user_id(user_id_list)
         self.gen_user_shell()
         self.gen_user_home_dir()
         self.gen_user_group(group_list)
+        self.gen_passwd(passwd)
 
     #user_name -> [prefix] + [number]
     def gen_user_name(self, user_name_list):
@@ -67,6 +68,10 @@ class User:
         home_dir = f"/home/{self.name}"
         self.home_dir = home_dir
 
+    #passwd
+    def gen_passwd(self, passwd):
+        self.passwd = passwd
+
     #to_dict
     def to_dict(self):
         return {
@@ -75,8 +80,9 @@ class User:
                 "shell": self.shell,
                 "group": self.group,
                 "home_dir": self.home_dir,
+                "passwd": self.passwd,
                 }
 
     def __repr__(self):
-        return f"User(id={self.id}, name={self.name}, shell={self.shell}, group={self.group})"
+        return f"User({self.to_dict()!r})"
 

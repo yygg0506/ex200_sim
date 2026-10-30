@@ -36,7 +36,7 @@ class Passwd:
                 }
 
     def __repr__(self):
-        return f"{self.to_dict}"
+        return f"Passwd({self.to_dict()!r})"
 # test
 if __name__ == "__main__":
     result = Passwd()

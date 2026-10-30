@@ -10,13 +10,13 @@ sys.path.insert(0, str(ENV_DIR))
 
 from lib import User, Group, Passwd
 
-def g2_gen_identity_user(random_num, group_list):
+def g2_gen_identity_user(random_num, group_list, passwd):
     user_name_list = []
     user_id_list = []
     user_list = []
     
     for _ in range(random_num):
-        user = User(user_name_list, user_id_list, group_list)
+        user = User(user_name_list, user_id_list, group_list, passwd)
         user_list.append(user)
 
     return user_list
@@ -30,6 +30,7 @@ if __name__ == "__main__":
         group = Group(group_name_list, group_id_list)
         group_list.append(group)
 
-    print(group_list)
+    passwd = Passwd()
 
-    g2_gen_identity_user(group_list)
+    result = g2_gen_identity_user(1, group_list, passwd)
+    print(result)
