@@ -24,9 +24,9 @@ def g2_gen_identity_user(random_num, group_list):
     user_name_list = []
     user_id_list = []
     user_list = []
-    passwd = Passwd() #get Passwd()
     
     for _ in range(random_num):
+        passwd = Passwd() #get Passwd()
         user = User(user_name_list, user_id_list, group_list, passwd)
         user_list.append(user)
 
