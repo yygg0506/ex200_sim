@@ -7,7 +7,7 @@ ENV_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
 # from lib
-from identity.identity_user import g2_gen_identity
+from identity.identity_generator import g2_gen_identity
 from lib import general_write
 
 def g2_gen():
