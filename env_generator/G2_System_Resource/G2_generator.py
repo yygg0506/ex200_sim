@@ -1,39 +1,43 @@
 #!/usr/bin/env python3
-
+# general import
 import random
-from identity.identity_group import g2_gen_identity_group
-from identity.identity_user import g2_gen_identity_user
-
 import sys
 from pathlib import Path
 ENV_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
+# from lib
+from identity.identity_generator import g2_gen_identity
 from lib import general_write
 
 def g2_gen():
 
     t1_info = {}
     t2_info = {}
-    random_num = random.randint(1, 10)
+    random_num = 2
 
 
-    ## identity ##
+## identity ##
+    id_list = g2_gen_identity(random_num)
+    # group / gid / membership
+    group_list = id_list["group_list"]
+    group_dict_list = []
+    for i in group_list:
+        group_dict_list.append(i.to_dict())
+
     # user / uid
-    id_group = {}
-    id_user = {}
-
-    id_group = g2_gen_identity_group(random_num)
-    id_user = g2_gen_identity_user(random_num, id_group["grp_name_list"])       
+    user_list = id_list["user_list"]    
+    user_dict_list = []
+    for i in user_list:
+        user_dict_list.append(i.to_dict())
 
     return {
-            "id_group": id_group,
-            "id_user": id_user,
+            "group": group_dict_list,
+            "user": user_dict_list
             }
-        #id_result = g2_gen_identity_proc(id_group, id_user)       
 
-        # group / gid / membership
-        # password / passwd aging
+
+    # password / passwd aging
 
     ## storage ##
         # disk partion

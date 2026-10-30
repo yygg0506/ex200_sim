@@ -23,15 +23,15 @@
 |   |   |-- file_system
 |   |   |-- identity
 |   |   |   |-- __pycache__
+|   |   |   |   |-- identity_generator.cpython-311.pyc
 |   |   |   |   |-- identity_group.cpython-311.pyc
 |   |   |   |   `-- identity_user.cpython-311.pyc
-|   |   |   |-- identity_group.py
-|   |   |   |-- identity_passwd.py
-|   |   |   `-- identity_user.py
+|   |   |   `-- identity_generator.py
 |   |   |-- storage
 |   |   `-- tmp_file
 |   |       |-- g2_result
 |   |       |-- group_result
+|   |       |-- test_class.py
 |   |       `-- user_result
 |   |-- G3_System_Operations
 |   |-- G4_Security_Integration
@@ -49,7 +49,16 @@
 |       |   |-- file_write.cpython-311.pyc
 |       |   `-- info_proc.cpython-311.pyc
 |       |-- file_write.py
-|       `-- info_proc.py
+|       |-- info_proc.py
+|       `-- lib_class
+|           |-- 2
+|           |-- __pycache__
+|           |   |-- class_Group.cpython-311.pyc
+|           |   |-- class_Passwd.cpython-311.pyc
+|           |   `-- class_User.cpython-311.pyc
+|           |-- class_Group.py
+|           |-- class_Passwd.py
+|           `-- class_User.py
 `-- not_sure
     `-- TEST-G1-01
         |-- env.sh
@@ -57,4 +66,4 @@
         |-- grader.py
         `-- question.txt
 
-22 directories, 36 files
+24 directories, 43 files
