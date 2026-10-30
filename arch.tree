@@ -25,8 +25,6 @@
 |   |   |   |-- __pycache__
 |   |   |   |   |-- identity_group.cpython-311.pyc
 |   |   |   |   `-- identity_user.cpython-311.pyc
-|   |   |   |-- identity_group.py
-|   |   |   |-- identity_passwd.py
 |   |   |   `-- identity_user.py
 |   |   |-- storage
 |   |   `-- tmp_file
@@ -67,4 +65,4 @@
         |-- grader.py
         `-- question.txt
 
-24 directories, 44 files
+24 directories, 42 files

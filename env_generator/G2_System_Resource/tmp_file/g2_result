@@ -1,34 +1,48 @@
 {
     "group": [
         {
-            "gid": 1921,
-            "group_name": "dev-57"
+            "gid": 1582,
+            "group_name": "ops-65"
         },
         {
-            "gid": 1373,
-            "group_name": "dev-39"
+            "gid": 1197,
+            "group_name": "dev-97"
         }
     ],
     "user": [
         {
-            "id": 1807,
-            "name": "rhel-66",
+            "id": 1148,
+            "name": "employee-27",
             "shell": "/usr/sbin/nologin",
             "group": {
-                "group_primary": "rhel-66",
-                "group_supp": "dev-39"
+                "group_primary": "employee-27",
+                "group_supp": "dev-97"
             },
-            "home_dir": "/home/rhel-66"
+            "home_dir": "/home/employee-27",
+            "passwd": {
+                "min": 3,
+                "max": 22,
+                "warn": 10,
+                "inactive": 9,
+                "expire": 2
+            }
         },
         {
-            "id": 1133,
-            "name": "rhel-56",
-            "shell": "/usr/sbin/nologin",
+            "id": 1486,
+            "name": "exam-70",
+            "shell": "/bin/bash",
             "group": {
-                "group_primary": "rhel-56",
-                "group_supp": "dev-57"
+                "group_primary": "exam-70",
+                "group_supp": "ops-65"
             },
-            "home_dir": "/home/rhel-56"
+            "home_dir": "/home/exam-70",
+            "passwd": {
+                "min": 3,
+                "max": 22,
+                "warn": 10,
+                "inactive": 9,
+                "expire": 2
+            }
         }
     ]
 }

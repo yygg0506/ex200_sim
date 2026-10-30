@@ -80,7 +80,7 @@ class User:
                 "shell": self.shell,
                 "group": self.group,
                 "home_dir": self.home_dir,
-                "passwd": self.passwd,
+                "passwd": self.passwd.to_dict(),
                 }
 
     def __repr__(self):

@@ -7,8 +7,7 @@ ENV_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ENV_DIR))
 
 # from lib
-from identity.identity_group import g2_gen_identity_group
-from identity.identity_user import g2_gen_identity_user
+from identity.identity_user import g2_gen_identity
 from lib import general_write
 
 def g2_gen():
@@ -19,14 +18,15 @@ def g2_gen():
 
 
 ## identity ##
+    id_list = g2_gen_identity(random_num)
     # group / gid / membership
-    group_list = g2_gen_identity_group(random_num)
+    group_list = id_list["group_list"]
     group_dict_list = []
     for i in group_list:
         group_dict_list.append(i.to_dict())
 
     # user / uid
-    user_list = g2_gen_identity_user(random_num, group_list)       
+    user_list = id_list["user_list"]    
     user_dict_list = []
     for i in user_list:
         user_dict_list.append(i.to_dict())
